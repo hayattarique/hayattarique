@@ -65,10 +65,10 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" height="50" alt="GitHub"/>
 
   <!-- Cloud & Message Queue -->
-  <img src="https://icons8.com/icon/33039/amazon-web-services" width="50" height="50" alt="AWS"/>
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-amazon-aws-icon-svg-download-png-3151644.png?f=webp&w=256" width="50" height="50" alt="AWS"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="50" height="50" alt="Redis"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" width="50" height="50" alt="RabbitMQ"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" width="50" height="50" alt="Kafka"/>
+  <img src="https://img.icons8.com/?size=64&id=fOhLNqGJsUbJ&format=png" width="50" height="50" alt="Kafka"/>
 
   <!-- Frontend -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" width="50" height="50" alt="Angular"/>
