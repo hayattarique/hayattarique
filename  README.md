@@ -4,6 +4,7 @@
 ---
 
 ### 👨‍💻 About Me
+
 - 💼 3+ years of professional experience as a **Java Developer** at **eSparksIT**
 - 🧠 Currently mastering **Spring Boot**, **Microservices**, and **Kubernetes**
 - 🌱 Learning **Angular** (1.5 hrs/day) & improving **Cloud + DevOps** skills
@@ -17,15 +18,19 @@
 ### 🛠️ Tech Arsenal
 
 #### 💻 Backend
+
 `Java` • `Spring Boot` • `Spring Cloud` • `Hibernate` • `JPA` • `Microservices`
 
 #### ☁️ Cloud & DevOps
+
 `Docker` • `Jenkins` • `AWS (EC2, S3, RDS)` • `SonarQube` • `Kafka` • `Kubernetes (Learning)`
 
 #### 🧠 Tools & Others
+
 `Postman` • `Swagger` • `Maven` • `GitHub Actions` • `JUnit5` • `Mockito`
 
 #### 🌐 Frontend
+
 `Angular` • `TypeScript` (Learning Phase)
 
 ---
@@ -41,30 +46,51 @@
 
 ### 🧩 Featured Projects
 
-| Project | Description | Tech Stack |
-|----------|--------------|------------|
-| 🏗️ [Real Estate ERP](https://github.com/TariqueHayat/real-estate-erp) | Full-stack ERP system for real estate management | Spring Boot, Spring Cloud, React/Angular |
-| 📬 [Mailing System](https://github.com/TariqueHayat/springboot-mailer) | Dynamic email service using FreeMarker templates | Spring Boot, SMTP, Docker |
-| ⚙️ [Kafka Microservice](https://github.com/TariqueHayat/kafka-integration) | Event-driven producer-consumer communication | Spring Boot, Kafka, Docker |
-| ☁️ [AWS Deployer](https://github.com/TariqueHayat/aws-deployment) | CI/CD setup for cloud deployment | Jenkins, Docker, AWS EC2 |
+| Project                                                                    | Description                                      | Tech Stack                               |
+|----------------------------------------------------------------------------|--------------------------------------------------|------------------------------------------|
+| 🏗️ [Real Estate ERP](https://github.com/TariqueHayat/real-estate-erp)     | Full-stack ERP system for real estate management | Spring Boot, Spring Cloud, React/Angular |
+| 📬 [Mailing System](https://github.com/TariqueHayat/springboot-mailer)     | Dynamic email service using FreeMarker templates | Spring Boot, SMTP, Docker                |
+| ⚙️ [Kafka Microservice](https://github.com/TariqueHayat/kafka-integration) | Event-driven producer-consumer communication     | Spring Boot, Kafka, Docker               |
+| ☁️ [AWS Deployer](https://github.com/TariqueHayat/aws-deployment)          | CI/CD setup for cloud deployment                 | Jenkins, Docker, AWS EC2                 |
 
 ---
 
-### 🧠 Tech Badges
+### 🧰 Skills & Tools
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white">
-  <img src="https://img.shields.io/badge/Spring_Boot-Expert-green?logo=springboot">
-  <img src="https://img.shields.io/badge/Microservices-Architecture-important">
-  <img src="https://img.shields.io/badge/Kafka-Enabled-red?logo=apachekafka">
-  <img src="https://img.shields.io/badge/Docker-Containerization-blue?logo=docker">
-  <img src="https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws">
-  <img src="https://img.shields.io/badge/Angular-Learning-red?logo=angular">
+  <!-- Backend -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" height="50" alt="Java"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="50" height="50" alt="Spring Boot"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" height="50" alt="MySQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50" height="50" alt="PostgreSQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="50" height="50" alt="MongoDB"/>
+
+  <!-- DevOps -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50" height="50" alt="Docker"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="50" height="50" alt="Kubernetes"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="50" height="50" alt="Jenkins"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50" height="50" alt="Git"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" height="50" alt="GitHub"/>
+
+  <!-- Cloud & Message Queue -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="50" height="50" alt="AWS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="50" height="50" alt="Redis"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" width="50" height="50" alt="RabbitMQ"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" width="50" height="50" alt="Kafka"/>
+
+  <!-- Frontend -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" width="50" height="50" alt="Angular"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" height="50" alt="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3"/>
 </p>
+
 
 ---
 
 ### ⚙️ CI/CD Pipeline Showcase
+
 Here’s my sample **GitHub Action** to build Java projects automatically:
 
 ```yaml
