@@ -5,7 +5,7 @@
 
 ### 👨‍💻 About Me
 
-- 💼 3+ years of professional experience as a **Java Developer** at **eSparksIT**
+- 💼 3+ years of professional experience as a **Java Developer** with strong exposure to **DevOps** practices.
 - 🧠 Currently mastering **Spring Boot**, **Microservices**, and **Kubernetes**
 - 🌱 Learning **Angular** (1.5 hrs/day) & improving **Cloud + DevOps** skills
 - 💬 Ask me about: `Spring Cloud`, `Kafka`, `Docker`, `AWS`, `System Design`
