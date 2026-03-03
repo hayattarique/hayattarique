@@ -24,11 +24,11 @@
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/TariqueHayat" target="_blank">
+  <a href="https://github.com/HayatTarique" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=TariqueHayat&style=for-the-badge&color=7C3AED&label=PROFILE+VIEWS" />
+  <img src="https://komarev.com/ghpvc/?username=HayatTarique&style=for-the-badge&color=7C3AED&label=PROFILE+VIEWS" />
   &nbsp;
   <img src="https://img.shields.io/badge/Status-Open%20to%20Work-22C55E?style=for-the-badge&logo=statuspage&logoColor=white" />
 </p>
@@ -77,7 +77,7 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
 <br/>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TariqueHayat&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=HayatTarique&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies" />
 </p>
 
 <br/>
@@ -90,13 +90,13 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
 <br/>
 
 <p align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=TariqueHayat&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=C9D1D9" alt="stats" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=C9D1D9" alt="stats" />
   &nbsp;&nbsp;
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TariqueHayat&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9" alt="top langs" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9" alt="top langs" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=TariqueHayat&theme=tokyonight&hide_border=true&background=0D1117&stroke=A78BFA&ring=A78BFA&fire=F59E0B&currStreakLabel=A78BFA&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
+  <img src="https://streak-stats.demolab.com?user=HayatTarique&theme=tokyonight&hide_border=true&background=0D1117&stroke=A78BFA&ring=A78BFA&fire=F59E0B&currStreakLabel=A78BFA&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </p>
 
 <br/>
@@ -173,8 +173,8 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
     <td width="50%" valign="top">
       <h3 align="center">🏗️ Real Estate ERP</h3>
       <p align="center">
-        <a href="https://github.com/TariqueHayat/real-estate-erp" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=TariqueHayat&repo=real-estate-erp&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
+        <a href="https://github.com/HayatTarique/real-estate-erp" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=real-estate-erp&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
         </a>
       </p>
       <p align="center">Enterprise ERP for real estate — property listings, tenant management and billing. <strong>Spring Cloud + Angular</strong>.</p>
@@ -187,8 +187,8 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
     <td width="50%" valign="top">
       <h3 align="center">📬 Enterprise Mailing System</h3>
       <p align="center">
-        <a href="https://github.com/TariqueHayat/springboot-mailer" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=TariqueHayat&repo=springboot-mailer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
+        <a href="https://github.com/HayatTarique/springboot-mailer" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=springboot-mailer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
         </a>
       </p>
       <p align="center">Dynamic template-driven email engine using <strong>FreeMarker + SMTP</strong>. Bulk mailing, scheduling and delivery tracking.</p>
@@ -203,8 +203,8 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
     <td width="50%" valign="top">
       <h3 align="center">⚙️ Kafka Microservice Platform</h3>
       <p align="center">
-        <a href="https://github.com/TariqueHayat/kafka-integration" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=TariqueHayat&repo=kafka-integration&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
+        <a href="https://github.com/HayatTarique/kafka-integration" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=kafka-integration&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
         </a>
       </p>
       <p align="center">Production-ready <strong>event-driven architecture</strong>. Kafka producers/consumers with dead letter queues and retry mechanisms.</p>
@@ -217,8 +217,8 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
     <td width="50%" valign="top">
       <h3 align="center">☁️ AWS CI/CD Deployer</h3>
       <p align="center">
-        <a href="https://github.com/TariqueHayat/aws-deployment" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=TariqueHayat&repo=aws-deployment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
+        <a href="https://github.com/HayatTarique/aws-deployment" target="_blank">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=aws-deployment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
         </a>
       </p>
       <p align="center">End-to-end <strong>CI/CD pipeline</strong> — automated build, test, Docker push and zero-downtime deploy to AWS EC2 via Jenkins.</p>
@@ -264,8 +264,8 @@ jobs:
         run: mvn sonar:sonar -Dsonar.host.url=${{ secrets.SONAR_URL }}
       - name: Build and Push Docker Image
         run: |
-          docker build -t tariquehayat/app:${{ github.sha }} .
-          docker push tariquehayat/app:${{ github.sha }}
+          docker build -t hayattarique/app:${{ github.sha }} .
+          docker push hayattarique/app:${{ github.sha }}
       - name: Deploy to AWS EC2
         run: ssh ${{ secrets.EC2_HOST }} "docker pull && docker-compose up -d"
 ```
@@ -304,7 +304,7 @@ jobs:
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TariqueHayat&theme=tokyo-night&hide_border=true&area=true&area_color=7C3AED&color=A78BFA&line=7C3AED&point=F59E0B&bg_color=0D1117" alt="contribution graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HayatTarique&theme=tokyo-night&hide_border=true&area=true&area_color=7C3AED&color=A78BFA&line=7C3AED&point=F59E0B&bg_color=0D1117" alt="contribution graph" />
 </p>
 
 <br/>
