@@ -1,9 +1,9 @@
-<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- ====================================================================== -->
 <!--       TARIQUE HAYAT  ·  GITHUB PROFILE README  ·  v5  ·  ELITE      -->
 <!--    Senior Backend Engineer · Java · Spring Boot · AWS · Kafka         -->
-<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- ====================================================================== -->
 
-<!-- ╔═════════════════════════════ HERO ════════════════════════════════╗ -->
+<!-- +============================= HERO ================================+ -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050510,20:0f0030,48:1a0845,72:0b2548,100:050510&height=310&section=header&text=Tarique%20Hayat&fontSize=82&fontColor=f5f0ff&fontAlignY=37&fontAlign=50&stroke=7c3aed&strokeWidth=3&desc=Senior%20Backend%20Engineer%20%E2%80%94%20Java%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=57&descSize=20&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Senior Backend Engineer" />
 </p>
@@ -44,7 +44,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════════ ABOUT ME ════════════════════════════╗ -->
+<!-- +============================= ABOUT ME ============================+ -->
 <h2 align="center">🧠 About Me</h2>
 <br/>
 
@@ -53,26 +53,23 @@
 <td width="60%" valign="top">
 
 ```yaml
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│   Name       :  Tarique Hayat                           │
-│   Role       :  Senior Backend Engineer                  │
-│   Experience :  3+ Years — Java · Spring Boot · Cloud   │
-│                                                          │
-│   Backend    :  Spring Boot 3 · Spring Cloud · REST      │
-│                 Spring Security · JWT/OAuth2 · Hibernate │
-│                                                          │
-│   Cloud      :  AWS (EC2 · S3 · RDS) · Docker · K8s     │
-│   Messaging  :  Apache Kafka · RabbitMQ · Redis          │
-│   Databases  :  PostgreSQL · MySQL · MongoDB             │
-│   Frontend   :  Angular 17 · TypeScript                  │
-│                                                          │
-│   Focus      :  High-Scale Microservices · Event-Driven  │
-│   Learning   :  K8s Advanced · System Design at Scale    │
-│   Location   :  Hyderabad · Kolkata · Delhi · Remote     │
-│   Status     :  Open to Senior Engineering Roles  🟢     │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
+name         : "Tarique Hayat"
+role         : "Senior Backend Engineer"
+experience   : "3+ Years -- Java / Spring Boot / Cloud"
+
+backend:
+  - Spring Boot 3 / Spring Cloud / REST API
+  - Spring Security / JWT / OAuth2 / Hibernate
+
+cloud        : "AWS (EC2, S3, RDS) / Docker / K8s"
+messaging    : "Apache Kafka / RabbitMQ / Redis"
+databases    : "PostgreSQL / MySQL / MongoDB"
+frontend     : "Angular 17 / TypeScript"
+
+focus        : "High-Scale Microservices / Event-Driven"
+learning     : "K8s Advanced / System Design at Scale"
+location     : "Hyderabad / Kolkata / Delhi / Remote"
+status       : "Open to Senior Engineering Roles  [AVAILABLE]"
 ```
 
 </td>
@@ -82,21 +79,25 @@
 
 **What I Build**
 
-```
-  ┌───────────────────────┐
-  │  Cloud-Native          │
-  │  Microservices          │
-  │  @ Production Scale     │
-  ├───────────────────────┤
-  │  Event-Driven           │
-  │  Architectures          │
-  │  (Kafka · RabbitMQ)     │
-  ├───────────────────────┤
-  │  Zero-Downtime          │
-  │  CI/CD Pipelines        │
-  │  (Jenkins · AWS)        │
-  └───────────────────────┘
-```
+<br/>
+
+<img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F-Cloud--Native%20Microservices-7C3AED?style=flat-square&labelColor=0d1117" /><br/>
+<sub>@ Production Scale</sub>
+
+<br/>
+
+<img src="https://img.shields.io/badge/%E2%9A%A1-Event--Driven%20Architectures-F59E0B?style=flat-square&labelColor=0d1117" /><br/>
+<sub>Kafka &middot; RabbitMQ &middot; Redis</sub>
+
+<br/>
+
+<img src="https://img.shields.io/badge/%F0%9F%94%84-Zero--Downtime%20CI%2FCD-22C55E?style=flat-square&labelColor=0d1117" /><br/>
+<sub>Jenkins &middot; AWS &middot; Docker</sub>
+
+<br/>
+
+<img src="https://img.shields.io/badge/%F0%9F%8F%97%EF%B8%8F-Distributed%20Systems-2496ED?style=flat-square&labelColor=0d1117" /><br/>
+<sub>Enterprise Scale</sub>
 
 </td>
 </tr>
@@ -114,7 +115,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ VALUE PROPOSITION ═══════════════════════╗ -->
+<!-- +========================= VALUE PROPOSITION =======================+ -->
 <h2 align="center">💼 What I Bring to Your Team</h2>
 <br/>
 
@@ -157,11 +158,11 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ TECH ARSENAL ════════════════════════════╗ -->
+<!-- +========================= TECH ARSENAL ============================+ -->
 <h2 align="center">⚡ Tech Arsenal</h2>
 <br/>
 
-<h4 align="center">── Backend Core ──</h4>
+<h4 align="center">--- Backend Core ---</h4>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java,spring,hibernate&theme=dark" /><br/><br/>
   <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
@@ -174,7 +175,7 @@
   <img src="https://img.shields.io/badge/OpenAPI_%2F_Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
 </p>
 
-<h4 align="center">── Cloud &amp; DevOps ──</h4>
+<h4 align="center">--- Cloud &amp; DevOps ---</h4>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,jenkins,githubactions&theme=dark" /><br/><br/>
   <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white" />
@@ -187,14 +188,14 @@
   <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" />
 </p>
 
-<h4 align="center">── Messaging &amp; Event Streaming ──</h4>
+<h4 align="center">--- Messaging &amp; Event Streaming ---</h4>
 <p align="center">
   <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/Redis_Streams-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
 </p>
 
-<h4 align="center">── Databases ──</h4>
+<h4 align="center">--- Databases ---</h4>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis&theme=dark" /><br/><br/>
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
@@ -203,7 +204,7 @@
   <img src="https://img.shields.io/badge/Redis_Cache-DC382D?style=flat-square&logo=redis&logoColor=white" />
 </p>
 
-<h4 align="center">── Frontend &amp; Tooling ──</h4>
+<h4 align="center">--- Frontend &amp; Tooling ---</h4>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=angular,ts,html,css,git,github,postman&theme=dark" /><br/><br/>
   <img src="https://img.shields.io/badge/Angular_17-DD0031?style=flat-square&logo=angular&logoColor=white" />
@@ -221,26 +222,26 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ SYSTEM DESIGN ═══════════════════════════╗ -->
+<!-- +========================= SYSTEM DESIGN ===========================+ -->
 <h2 align="center">🏛️ System Architecture</h2>
 <br/>
 
 ```
-  ╔═══════════════════════════════════════════════════════════════════╗
-  ║               CLOUD-NATIVE MICROSERVICES ARCHITECTURE             ║
-  ╠════════════════╦════════════════╦════════════════╦═══════════════╣
-  ║   API Gateway  ║  Auth Service  ║  Core Service  ║   Notifier    ║
-  ║ (Spring Cloud  ║ (JWT / OAuth2  ║  (Business     ║  (Kafka       ║
-  ║  Gateway)      ║  · RBAC)       ║   Logic)       ║   Consumer)   ║
-  ╠════════════════╩════════════════╩════════════════╩═══════════════╣
-  ║        Async Event Bus ──── Apache Kafka (partitioned topics)    ║
-  ╠═════════════════════════════╦═════════════════════════════════════╣
-  ║  PostgreSQL / MySQL (OLTP)  ║  Redis Cache  +  MongoDB (Docs)    ║
-  ╠═════════════════════════════╩═════════════════════════════════════╣
-  ║  Docker + Kubernetes (K8s)  │  Jenkins CI/CD  │  AWS Cloud        ║
-  ╠═════════════════════════════╧═════════════════╧═══════════════════╣
-  ║  Eureka Discovery  ·  Zipkin Tracing  ·  ELK Stack  ·  Prometheus ║
-  ╚═══════════════════════════════════════════════════════════════════╝
+  +===================================================================+
+  |               CLOUD-NATIVE MICROSERVICES ARCHITECTURE             |
+  +================+================+================+===============+
+  |   API Gateway  |  Auth Service  |  Core Service  |   Notifier    |
+  | (Spring Cloud  | (JWT / OAuth2  |  (Business     |  (Kafka       |
+  |  Gateway)      |  · RBAC)       |   Logic)       |   Consumer)   |
+  +================+================+================+===============+
+  |        Async Event Bus ---- Apache Kafka (partitioned topics)    |
+  +=============================+=====================================+
+  |  PostgreSQL / MySQL (OLTP)  |  Redis Cache  +  MongoDB (Docs)    |
+  +=============================+=====================================+
+  |  Docker + Kubernetes (K8s)  |  Jenkins CI/CD  |  AWS Cloud        |
+  +=============================+=================+===================+
+  |  Eureka Discovery  ·  Zipkin Tracing  ·  ELK Stack  ·  Prometheus |
+  +===================================================================+
 ```
 
 <br/>
@@ -249,7 +250,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ FEATURED PROJECTS ═══════════════════════╗ -->
+<!-- +========================= FEATURED PROJECTS =======================+ -->
 <h2 align="center">🧩 Featured Projects</h2>
 <br/>
 
@@ -359,7 +360,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ GITHUB STATS ════════════════════════════╗ -->
+<!-- +========================= GITHUB STATS ============================+ -->
 <h2 align="center">📊 GitHub Stats</h2>
 <br/>
 
@@ -375,9 +376,19 @@
 
 <br/>
 
-<!-- Trophies -->
+<!-- Technical Expertise — always-visible, no account dependency -->
+<h3 align="center">🏅 Technical Expertise</h3>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=HayatTarique&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+  <img src="https://img.shields.io/badge/Java%2017-Expert-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Spring%20Boot-Expert-6DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Microservices-Expert-7C3AED?style=for-the-badge&logo=spring&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Apache%20Kafka-Advanced-231F20?style=for-the-badge&logo=apachekafka&logoColor=white&labelColor=0d1117" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-Advanced-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Kubernetes-Advanced-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/AWS-Advanced-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Angular%2017-Proficient-DD0031?style=for-the-badge&logo=angular&logoColor=white&labelColor=0d1117" />
 </p>
 
 <br/>
@@ -386,7 +397,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ ACTIVITY GRAPH ══════════════════════════╗ -->
+<!-- +========================= ACTIVITY GRAPH ==========================+ -->
 <h2 align="center">📈 Contribution Activity</h2>
 <br/>
 
@@ -400,7 +411,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ CICD PIPELINE ═══════════════════════════╗ -->
+<!-- +========================= CICD PIPELINE ===========================+ -->
 <h2 align="center">⚙️ CI/CD Pipeline — Production Example</h2>
 <br/>
 
@@ -451,7 +462,7 @@ jobs:
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ 2026 FOCUS ══════════════════════════════╗ -->
+<!-- +========================= 2026 FOCUS ==============================+ -->
 <h2 align="center">🎯 Current Focus — 2026</h2>
 <br/>
 
@@ -487,7 +498,7 @@ jobs:
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ ENGINEERING PHILOSOPHY ══════════════════╗ -->
+<!-- +========================= ENGINEERING PHILOSOPHY ==================+ -->
 <h2 align="center">💡 Engineering Philosophy</h2>
 <br/>
 
@@ -517,7 +528,7 @@ jobs:
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- ╔═════════════════════════ FOOTER ══════════════════════════════════╗ -->
+<!-- +========================= FOOTER ==================================+ -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050510,25:0b2548,55:1a0845,80:0f0030,100:050510&height=150&section=footer&animation=twinkling" width="100%" alt="footer" />
 </p>
