@@ -365,7 +365,7 @@ status       : "Open to Senior Engineering Roles  [AVAILABLE]"
 <br/>
 
 <p align="center">
-  <img height="185em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&cache_seconds=86400&custom_title=Tarique%27s%20GitHub%20Stats" alt="GitHub Stats" />
+  <img height="185em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&custom_title=Tarique%27s%20GitHub%20Stats" alt="GitHub Stats" />
   &nbsp;
   <img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&cache_seconds=86400&hide=html,css,scss&custom_title=Most%20Used%20Languages" alt="Top Languages" />
 </p>
