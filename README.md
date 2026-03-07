@@ -10,7 +10,7 @@
 
 <!-- ╔══════════════════ ANIMATED HEADLINE ═══════════════╗ -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2500&pause=800&color=A78BFA&center=true&vCenter=true&width=800&height=45&lines=🚀+3%2B+Years+Senior+Java+%26+Spring+Boot+Engineer;☁️+AWS+%7C+Docker+%7C+Kubernetes+%7C+Jenkins;⚡+Event-Driven+Microservices+Architect;🟢+Open+to+Senior+Backend+%26+Full-Stack+Roles" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2500&pause=800&color=A78BFA&center=true&vCenter=true&width=800&height=45&lines=%F0%9F%9A%80+3%2B+Years+Senior+Java+%26+Spring+Boot+Engineer;%E2%98%81%EF%B8%8F+AWS+%7C+Docker+%7C+Kubernetes+%7C+Jenkins;%E2%9A%A1+Event-Driven+Microservices+Architect;%F0%9F%9F%A2+Open+to+Senior+Backend+%26+Full-Stack+Roles" alt="Typing SVG" />
 </p>
 
 <br/>
