@@ -360,15 +360,54 @@ status       : "Open to Senior Engineering Roles  [AVAILABLE]"
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= GITHUB STATS ============================+ -->
-<h2 align="center">📊 GitHub Stats</h2>
+<!-- +========================= ENGINEERING METRICS =====================+ -->
+<h2 align="center">📊 Engineering Metrics</h2>
 <br/>
 
-<p align="center">
-  <img height="185em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&custom_title=Tarique%27s%20GitHub%20Stats" alt="GitHub Stats" />
-  &nbsp;
-  <img height="185em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&cache_seconds=86400&hide=html,css,scss&custom_title=Most%20Used%20Languages" alt="Top Languages" />
-</p>
+<table align="center" width="88%">
+  <tr>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0d1117" /><br/>
+      <sub>Professional Engineering</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/Microservices-15%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" /><br/>
+      <sub>Production Deployed</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/REST%20APIs-50%2B%20Designed-22C55E?style=for-the-badge&labelColor=0d1117" /><br/>
+      <sub>Enterprise Grade</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-10%2B%20Automated-2496ED?style=for-the-badge&labelColor=0d1117" /><br/>
+      <sub>Zero-Downtime</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <br/>
+      <img src="https://img.shields.io/badge/Java%2017-Primary%20Language-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d1117" /><br/>
+      <sub>3+ Years Daily</sub><br/>&nbsp;
+    </td>
+    <td align="center" width="25%">
+      <br/>
+      <img src="https://img.shields.io/badge/Spring%20Boot-Core%20Framework-6DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=0d1117" /><br/>
+      <sub>Boot 3 · Cloud · Security</sub><br/>&nbsp;
+    </td>
+    <td align="center" width="25%">
+      <br/>
+      <img src="https://img.shields.io/badge/AWS%20%7C%20Docker%20%7C%20K8s-Cloud%20Stack-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=0d1117" /><br/>
+      <sub>Production Infra</sub><br/>&nbsp;
+    </td>
+    <td align="center" width="25%">
+      <br/>
+      <img src="https://img.shields.io/badge/Apache%20Kafka-Event%20Streaming-231F20?style=for-the-badge&logo=apachekafka&logoColor=white&labelColor=0d1117" /><br/>
+      <sub>DLQ · Retry · Tracing</sub><br/>&nbsp;
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=HayatTarique&theme=tokyonight&hide_border=true&background=0d1117&stroke=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=f5f0ff&sideNums=f5f0ff" alt="GitHub Streak" />
