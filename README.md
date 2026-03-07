@@ -1,20 +1,21 @@
 <!-- ════════════════════════════════════════════════════════════════ -->
-<!--                    TARIQUE HAYAT — GITHUB PROFILE              -->
+<!--              TARIQUE HAYAT — GITHUB PROFILE README             -->
+<!--           Rebuilt v3: Zero broken images, full animations      -->
 <!-- ════════════════════════════════════════════════════════════════ -->
 
-<!-- ╔═══════════════════════════ HERO BANNER ═══════════════════════╗ -->
+<!-- ╔═══════════════════ HERO BANNER ════════════════════╗ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:090909,25:1a0533,55:2d1b69,80:0f3460,100:090909&height=280&section=header&text=Tarique%20Hayat&fontSize=85&fontColor=FFFFFF&fontAlignY=38&stroke=9B59F5&strokeWidth=2&desc=Senior%20Backend%20Engineer%20%7C%20Java%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=60&descSize=20&descColor=A78BFA&animation=twinkling" width="100%" alt="Tarique Hayat" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:090909,30:1a0533,60:2d1b69,85:0f3460,100:090909&height=270&section=header&text=Tarique%20Hayat&fontSize=82&fontColor=FFFFFF&fontAlignY=38&stroke=9B59F5&strokeWidth=2&desc=Senior%20Backend%20Engineer%20%7C%20Java%20%7C%20Spring%20Boot%20%7C%20Microservices%20%7C%20AWS&descAlignY=60&descSize=18&descColor=A78BFA&animation=twinkling" width="100%" alt="Tarique Hayat" />
 </p>
 
-<!-- ╔══════════════════════ ANIMATED TYPING SVG ════════════════════╗ -->
+<!-- ╔══════════════════ ANIMATED HEADLINE ═══════════════╗ -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=860&height=48&lines=🚀+3%2B+Years+Java+%26+Spring+Boot+Engineer;☁️+Cloud-Native+Microservices+Architect;⚙️+Docker+%7C+Kubernetes+%7C+Jenkins+%7C+AWS;📨+Event-Driven+Systems+with+Apache+Kafka;🟢+Open+to+Senior+Backend+Roles" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2500&pause=800&color=A78BFA&center=true&vCenter=true&width=800&height=45&lines=🚀+3%2B+Years+Senior+Java+%26+Spring+Boot+Engineer;☁️+AWS+%7C+Docker+%7C+Kubernetes+%7C+Jenkins;⚡+Event-Driven+Microservices+Architect;🟢+Open+to+Senior+Backend+%26+Full-Stack+Roles" alt="Typing SVG" />
 </p>
 
 <br/>
 
-<!-- ╔══════════════════════════ SOCIAL BADGES ══════════════════════╗ -->
+<!-- ╔══════════════════ SOCIAL BADGES ═══════════════════╗ -->
 <p align="center">
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -35,26 +36,28 @@
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
+</p>
 
-<!-- ╔════════════════════════════ ABOUT ME ═════════════════════════╗ -->
+<!-- ╔══════════════════ ABOUT ME ═════════════════════════╗ -->
 <h2 align="center">🧠 About Me</h2>
 
 <br/>
 
 <p align="center">
-<table>
+<table align="center">
 <tr><td>
 
 ```yaml
 Name        : Tarique Hayat
 Role        : Senior Backend Engineer
-Experience  : 3+ Years  (Java · Spring Boot · Spring Cloud · DevOps)
-Focus       : Microservices · Event-Driven Architecture · Cloud-Native
-Learning    : Kubernetes (Advanced) · Angular · System Design at Scale
+Experience  : 3+ Years  (Java · Spring Boot · Spring Cloud · Cloud-Native)
+Focus       : Microservices · Event-Driven Architecture · High-Scale Systems
+Learning    : Kubernetes Advanced · System Design at Scale
 Location    : Hyderabad  |  Kolkata  |  Delhi
 Email       : hayattarique3@gmail.com
-Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
+Status      : 🟢  Open to Senior Backend / Full-Stack Engineering Roles
 ```
 
 </td></tr>
@@ -64,178 +67,207 @@ Status      : 🟢 Open to Senior Backend / Full-Stack Engineering Roles
 <br/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=99999&color=A78BFA&center=true&vCenter=true&width=800&height=40&lines=%22I+don%27t+just+write+code+%E2%80%94+I+engineer+scalable+systems+that+survive+production.%22" alt="quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=99999&color=A78BFA&center=true&vCenter=true&width=820&height=40&lines=%22I+don%27t+just+write+code+%E2%80%94+I+engineer+scalable+systems+built+to+survive+production.%22" alt="quote" />
 </p>
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
-
-<!-- ╔═══════════════════════════ TROPHIES ══════════════════════════╗ -->
-<h2 align="center">🏆 GitHub Trophies</h2>
+<!-- ╔══════════════════ KEY METRICS ══════════════════════╗ -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0D1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&labelColor=0D1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Cloud-AWS%20%7C%20Docker%20%7C%20K8s-FF9900?style=for-the-badge&logo=amazon-aws&labelColor=0D1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Events-Kafka%20%7C%20RabbitMQ-231F20?style=for-the-badge&logo=apache-kafka&labelColor=0D1117" />
+</p>
 
 <br/>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=HayatTarique&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies" />
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
 </p>
 
-<br/>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
-
-<!-- ╔═══════════════════════════ GITHUB STATS ══════════════════════╗ -->
-<h2 align="center">📊 GitHub Stats</h2>
-
-<br/>
-
-<p align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=C9D1D9" alt="stats" />
-  &nbsp;&nbsp;
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9" alt="top langs" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=HayatTarique&theme=tokyonight&hide_border=true&background=0D1117&stroke=A78BFA&ring=A78BFA&fire=F59E0B&currStreakLabel=A78BFA&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
-</p>
-
-<br/>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
-
-<!-- ╔═══════════════════════════ TECH ARSENAL ══════════════════════╗ -->
+<!-- ╔══════════════════ TECH ARSENAL ════════════════════╗ -->
 <h2 align="center">⚡ Tech Arsenal</h2>
 
 <br/>
 
 <h4 align="center">💻 Backend Core</h4>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white"/>
-  <img src="https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Microservices-7C3AED?style=for-the-badge&logo=apachekafka&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=java,spring&theme=dark" alt="Backend Icons" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Cloud-Microservices-6DB33F?style=flat-square&logo=spring&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Security-JWT%2FOAuth2-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hibernate-ORM-59666C?style=flat-square&logo=hibernate&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST_API-OpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
 </p>
 
 <h4 align="center">☁️ Cloud &amp; DevOps</h4>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,jenkins,githubactions&theme=dark" alt="Cloud DevOps Icons" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-EC2%2FS3%2FRDS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=flat-square&logo=jenkins&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+  <img src="https://img.shields.io/badge/SonarQube-Code_Quality-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" />
 </p>
 
 <h4 align="center">📨 Messaging &amp; Streaming</h4>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white"/>
-  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Apache_Kafka-Event_Streaming-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/RabbitMQ-Message_Broker-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Redis-Pub%2FSub%20%7C%20Cache-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
 </p>
 
 <h4 align="center">🗄️ Databases</h4>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis&theme=dark" alt="Database Icons" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
 </p>
 
-<h4 align="center">🔧 Tools &amp; Testing</h4>
-<p align="center">
-  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
-  <img src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-</p>
+<h4 align="center">🌐 Frontend &amp; Tools</h4>
 
-<h4 align="center">🌐 Frontend</h4>
 <p align="center">
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=angular,ts,html,css,git,github&theme=dark" alt="Frontend Tools Icons" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular_17-DD0031?style=flat-square&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
 </p>
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
+</p>
 
-<!-- ╔════════════════════════ FEATURED PROJECTS ════════════════════╗ -->
+<!-- ╔══════════════════ FEATURED PROJECTS ═══════════════╗ -->
 <h2 align="center">🧩 Featured Projects</h2>
 
 <br/>
 
-<table align="center">
+<table align="center" width="92%">
   <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🏗️ Real Estate ERP</h3>
-      <p align="center">
-        <a href="https://github.com/HayatTarique/real-estate-erp" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=real-estate-erp&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
-        </a>
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <h3>🏗️ Real Estate ERP</h3>
+      <p><em>Enterprise property lifecycle management platform</em></p>
+      <p align="left">
+        Multi-tenant SaaS ERP built with <strong>Spring Cloud Microservices</strong>.
+        Covers property listings, lease management, tenant billing, document workflows
+        and reporting dashboards. Angular frontend with full role-based access control.
       </p>
-      <p align="center">Enterprise ERP for real estate — property listings, tenant management and billing. <strong>Spring Cloud + Angular</strong>.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring"/>
-        <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker"/>
+      <p>
+        <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white" />
+        <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
+        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT_Auth-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
       </p>
+      <a href="https://github.com/HayatTarique/real-estate-erp">
+        <img src="https://img.shields.io/badge/View_Source-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <br/><br/>
     </td>
-    <td width="50%" valign="top">
-      <h3 align="center">📬 Enterprise Mailing System</h3>
-      <p align="center">
-        <a href="https://github.com/HayatTarique/springboot-mailer" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=springboot-mailer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
-        </a>
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <h3>📬 Enterprise Mailing System</h3>
+      <p><em>Dynamic template-driven bulk email engine</em></p>
+      <p align="left">
+        High-volume email platform using <strong>FreeMarker templates + SMTP</strong>.
+        Supports bulk mailing, scheduling, bounce handling, delivery tracking and
+        retry logic. Designed for enterprise communication workflows at scale.
       </p>
-      <p align="center">Dynamic template-driven email engine using <strong>FreeMarker + SMTP</strong>. Bulk mailing, scheduling and delivery tracking.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot"/>
-        <img src="https://img.shields.io/badge/SMTP-EA4335?style=flat-square&logo=gmail"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker"/>
+      <p>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
+        <img src="https://img.shields.io/badge/FreeMarker-009688?style=flat-square&logo=apache&logoColor=white" />
+        <img src="https://img.shields.io/badge/SMTP-EA4335?style=flat-square&logo=gmail&logoColor=white" />
+        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
       </p>
+      <a href="https://github.com/HayatTarique/springboot-mailer">
+        <img src="https://img.shields.io/badge/View_Source-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <br/><br/>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">⚙️ Kafka Microservice Platform</h3>
-      <p align="center">
-        <a href="https://github.com/HayatTarique/kafka-integration" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=kafka-integration&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
-        </a>
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <h3>⚡ Kafka Microservice Platform</h3>
+      <p><em>Production-ready event-driven architecture</em></p>
+      <p align="left">
+        Distributed event streaming system with <strong>Apache Kafka</strong>
+        producers, consumers, dead-letter queues and automatic retry mechanisms.
+        Handles high-throughput asynchronous workflows with fault tolerance
+        and consumer group partitioning.
       </p>
-      <p align="center">Production-ready <strong>event-driven architecture</strong>. Kafka producers/consumers with dead letter queues and retry mechanisms.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka"/>
-        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker"/>
+      <p>
+        <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white" />
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" />
+        <img src="https://img.shields.io/badge/Zookeeper-E95420?style=flat-square&logo=apache&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
       </p>
+      <a href="https://github.com/HayatTarique/kafka-integration">
+        <img src="https://img.shields.io/badge/View_Source-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <br/><br/>
     </td>
-    <td width="50%" valign="top">
-      <h3 align="center">☁️ AWS CI/CD Deployer</h3>
-      <p align="center">
-        <a href="https://github.com/HayatTarique/aws-deployment" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=HayatTarique&repo=aws-deployment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA" />
-        </a>
+    <td width="50%" valign="top" align="center">
+      <br/>
+      <h3>☁️ AWS CI/CD Deployer</h3>
+      <p><em>Zero-downtime automated deployment pipeline</em></p>
+      <p align="left">
+        End-to-end <strong>CI/CD pipeline</strong> with automated build, unit
+        testing, SonarQube analysis, Docker image build and push, and
+        zero-downtime rolling deployment to AWS EC2 via Jenkins
+        Declarative Pipeline and GitHub Actions.
       </p>
-      <p align="center">End-to-end <strong>CI/CD pipeline</strong> — automated build, test, Docker push and zero-downtime deploy to AWS EC2 via Jenkins.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins"/>
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker"/>
-        <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazon-aws"/>
+      <p>
+        <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" />
+        <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" />
+        <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white" />
       </p>
+      <a href="https://github.com/HayatTarique/aws-deployment">
+        <img src="https://img.shields.io/badge/View_Source-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      <br/><br/>
     </td>
   </tr>
 </table>
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
+</p>
 
-<!-- ╔══════════════════════ CI/CD PIPELINE CODE ════════════════════╗ -->
+<!-- ╔══════════════════ CI/CD PIPELINE ══════════════════╗ -->
 <h2 align="center">⚙️ CI/CD Pipeline — Live Example</h2>
 
 <br/>
@@ -272,9 +304,11 @@ jobs:
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
+</p>
 
-<!-- ╔══════════════════════ SYSTEM DESIGN ══════════════════════════╗ -->
+<!-- ╔══════════════════ SYSTEM DESIGN ═══════════════════╗ -->
 <h2 align="center">🏛️ System Design Philosophy</h2>
 
 <br/>
@@ -296,22 +330,11 @@ jobs:
 
 <br/>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
-
-<!-- ╔══════════════════════ CONTRIBUTION GRAPH ═════════════════════╗ -->
-<h2 align="center">📈 Contribution Graph</h2>
-
-<br/>
-
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HayatTarique&theme=tokyo-night&hide_border=true&area=true&area_color=7C3AED&color=A78BFA&line=7C3AED&point=F59E0B&bg_color=0D1117" alt="contribution graph" />
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="divider" width="100%" />
 </p>
 
-<br/>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" alt="line" width="100%"/></p>
-
-<!-- ╔═══════════════════════════ FOOTER ════════════════════════════╗ -->
+<!-- ╔══════════════════ FOOTER ═══════════════════════════╗ -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:090909,25:0f3460,55:2d1b69,80:1a0533,100:090909&height=140&section=footer&animation=twinkling" width="100%" alt="footer" />
 </p>
