@@ -126,9 +126,10 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <h2 align="center">🧩 Featured Projects</h2>
 <br/>
 
-<table align="center" width="94%">
+<!-- Projects: single-column — each card full width, works on all screen sizes -->
+<table align="center" width="92%">
   <tr>
-    <td width="50%" valign="top" align="center">
+    <td align="center">
       <br/>
       <h3>🏗️ Real Estate ERP Platform</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
@@ -153,7 +154,9 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
       </a>
       <br/><br/>
     </td>
-    <td width="50%" valign="top" align="center">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <h3>📬 Enterprise Mailing Engine</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
@@ -179,7 +182,7 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" align="center">
+    <td align="center">
       <br/>
       <h3>⚡ Kafka Microservice Platform</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
@@ -203,7 +206,9 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
       </a>
       <br/><br/>
     </td>
-    <td width="50%" valign="top" align="center">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <h3>☁️ AWS CI/CD Pipeline</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
@@ -240,30 +245,33 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <h2 align="center">💼 What I Bring to Your Team</h2>
 <br/>
 
-<table align="center" width="90%">
+<!-- Value Prop: 2x2 grid — readable on mobile (2 cols ~190px each) and desktop -->
+<table align="center" width="92%">
   <tr>
-    <td align="center" width="25%" valign="top">
+    <td align="center" width="50%" valign="top">
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%8F%97%EF%B8%8F-System%20Architect-7C3AED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Designs distributed microservice systems with API Gateway, service mesh, Eureka discovery and Zipkin tracing</sub>
       <br/><br/>
     </td>
-    <td align="center" width="25%" valign="top">
+    <td align="center" width="50%" valign="top">
       <br/>
       <img src="https://img.shields.io/badge/%E2%9A%A1-Event%20Streaming-F59E0B?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Builds Kafka pipelines with DLQ, exponential backoff retry, consumer group partitioning and full observability</sub>
       <br/><br/>
     </td>
-    <td align="center" width="25%" valign="top">
+  </tr>
+  <tr>
+    <td align="center" width="50%" valign="top">
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%90%B3-DevOps%20%26%20CI%2FCD-2496ED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Containerises and orchestrates via Docker + Kubernetes with Jenkins and GitHub Actions pipelines end-to-end</sub>
       <br/><br/>
     </td>
-    <td align="center" width="25%" valign="top">
+    <td align="center" width="50%" valign="top">
       <br/>
       <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F-Cloud%20Native-FF9900?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
@@ -375,21 +383,24 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <h2 align="center">📊 Engineering Metrics</h2>
 <br/>
 
+<!-- Metrics: 2x2 grid — 2 cols ~190px each works on mobile and desktop -->
 <table align="center" width="88%">
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0d1117" /><br/>
       <sub>Professional Engineering</sub>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <img src="https://img.shields.io/badge/Microservices-15%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" /><br/>
       <sub>Production Deployed</sub>
     </td>
-    <td align="center" width="25%">
+  </tr>
+  <tr>
+    <td align="center" width="50%">
       <img src="https://img.shields.io/badge/REST%20APIs-50%2B%20Designed-22C55E?style=for-the-badge&labelColor=0d1117" /><br/>
       <sub>Enterprise Grade</sub>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-10%2B%20Automated-2496ED?style=for-the-badge&labelColor=0d1117" /><br/>
       <sub>Zero-Downtime</sub>
     </td>
@@ -477,23 +488,28 @@ jobs:
 <h2 align="center">🎯 Current Focus &mdash; 2026</h2>
 <br/>
 
-<table align="center" width="85%">
+<!-- Current Focus: single column — clean stacked layout on any screen size -->
+<table align="center" width="72%">
   <tr>
-    <td align="center" width="33%" valign="top">
+    <td align="center">
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%A7%20Building-Advanced%20K8s%20Orchestration-326CE5?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Helm charts, Horizontal Pod Autoscaling, custom operators and multi-cluster deployments</sub>
       <br/><br/>
     </td>
-    <td align="center" width="33%" valign="top">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%93%90%20Mastering-System%20Design%20at%20Scale-7C3AED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Designing systems for 1M+ concurrent users — sharding, CQRS, event sourcing, distributed transactions</sub>
       <br/><br/>
     </td>
-    <td align="center" width="33%" valign="top">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%8D%20Exploring-Observability%20Stack-E6522C?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
@@ -513,19 +529,24 @@ jobs:
 <h2 align="center">💡 Engineering Philosophy</h2>
 <br/>
 
-<table align="center" width="90%">
+<!-- Philosophy: single column — always readable regardless of screen width -->
+<table align="center" width="72%">
   <tr>
-    <td align="center" width="33%" valign="top">
+    <td align="center">
       <br/>
       <h4>🔥 Design for Failure</h4>
       <p><sub>Every distributed system will fail. I build with circuit breakers, bulkheads, graceful degradation and automated recovery from day one.</sub></p>
     </td>
-    <td align="center" width="33%" valign="top">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <h4>🔭 Observability First</h4>
       <p><sub>Code that cannot be monitored in production is unfinished. Structured logs, distributed traces and health metrics are non-negotiable.</sub></p>
     </td>
-    <td align="center" width="33%" valign="top">
+  </tr>
+  <tr>
+    <td align="center">
       <br/>
       <h4>⚙️ Automate Everything</h4>
       <p><sub>If you do it twice, automate it. CI/CD, infra provisioning, test coverage gates — manual steps are technical debt disguised as process.</sub></p>
