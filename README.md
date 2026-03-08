@@ -27,7 +27,7 @@
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-hayattarique3-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1a2e" />
   </a>&nbsp;
-  <a href="https://www.linkedin.com/in/tariquehayat" target="_blank">
+  <a href="https://www.linkedin.com/in/hayat-tariq" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1a2e" />
   </a>&nbsp;
   <a href="https://github.com/HayatTarique" target="_blank">
@@ -550,7 +550,7 @@ jobs:
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20Me-hayattarique3%40gmail.com-EA4335?style=for-the-badge&labelColor=0d1117" />
   </a>&nbsp;
-  <a href="https://www.linkedin.com/in/tariquehayat" target="_blank">
+  <a href="https://www.linkedin.com/in/hayat-tariq" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%92%BC%20LinkedIn-Connect%20Now-0A66C2?style=for-the-badge&labelColor=0d1117" />
   </a>
 </p>
