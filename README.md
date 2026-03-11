@@ -5,9 +5,9 @@
 
 <!-- +============================ HERO ================================+ -->
 
-<!-- MAIN HERO BANNER — self-hosted SVG, served from this repo, never breaks -->
+<!-- MAIN HERO BANNER — self-hosted SVG, absolute raw URL so GitHub profile resolves it -->
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
+  <img src="https://raw.githubusercontent.com/hayattarique/hayattarique/main/assets/hero.svg" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
