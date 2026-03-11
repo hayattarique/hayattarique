@@ -4,8 +4,13 @@
 <!-- ============================================================================== -->
 
 <!-- +============================ HERO ================================+ -->
+
+<!-- TOP GLOWING BAR -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7c3aed,50:a855f7,100:7c3aed&height=4&section=header" width="100%" />
+
+<!-- MAIN HERO BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:030014,15:0d0030,40:1a0845,70:0b2548,100:030014&height=340&section=header&text=Tarique%20Hayat&fontSize=90&fontColor=f5f0ff&fontAlignY=36&fontAlign=50&stroke=8b5cf6&strokeWidth=3&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=56&descSize=22&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat - Java Backend and Cloud Engineer" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:030014,25:0d0140,55:1a0845,80:0b2548,100:030014&height=320&section=header&text=Tarique%20Hayat&fontSize=88&fontColor=f5f0ff&fontAlignY=42&fontAlign=50&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=62&descSize=22&descColor=c9b8ff&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
