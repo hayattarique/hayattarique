@@ -5,7 +5,7 @@
 
 <!-- +============================ HERO ================================+ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:030014,15:0d0030,40:1a0845,70:0b2548,100:030014&height=360&section=header&text=Tarique%20Hayat&fontSize=92&fontColor=f5f0ff&fontAlignY=36&fontAlign=50&stroke=8b5cf6&strokeWidth=4&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%E2%80%94%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=56&descSize=23&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend & Cloud Engineer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:030014,15:0d0030,40:1a0845,70:0b2548,100:030014&height=340&section=header&text=Tarique%20Hayat&fontSize=90&fontColor=f5f0ff&fontAlignY=36&fontAlign=50&stroke=8b5cf6&strokeWidth=3&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=56&descSize=22&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat - Java Backend and Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
@@ -129,7 +129,9 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=HayatTarique&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" width="100%" alt="GitHub Trophies" />
+  <img src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&count_private=true&include_all_commits=true" height="175em" alt="GitHub Stats" />
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=donut&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=6&hide=html,css,shell" height="175em" alt="Top Languages" />
 </p>
 
 <br/>
@@ -565,12 +567,20 @@ jobs:
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- +======================= 3D CONTRIBUTION LANDSCAPE ====================+ -->
-<h2 align="center">📐 3D Contribution Landscape</h2>
+<!-- +====================== CONTRIBUTION INSIGHTS ======================+ -->
+<h2 align="center">📐 Contribution Insights</h2>
 <br/>
 
 <p align="center">
-  <img src="https://github-readme-3d-contrib.vercel.app/api/isometric1/HayatTarique.svg?theme=tokyonight" width="100%" alt="3D Contribution Landscape" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HayatTarique&theme=tokyonight" width="98%" alt="Contribution Timeline" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HayatTarique&theme=tokyonight" width="32%" alt="Repos by Language" />&nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=HayatTarique&theme=tokyonight" width="32%" alt="Most Committed Language" />&nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=HayatTarique&theme=tokyonight" width="32%" alt="Stats" />
 </p>
 
 <br/>
