@@ -1,16 +1,16 @@
-<!-- ====================================================================== -->
-<!--   TARIQUE HAYAT · GITHUB PROFILE README · v6 · WORLD-CLASS EDITION  -->
-<!--   Senior Backend Engineer · Java · Spring Boot · AWS · Kafka          -->
-<!-- ====================================================================== -->
+<!-- ============================================================================== -->
+<!--   TARIQUE HAYAT · GITHUB PROFILE README · v7 · WORLD-CLASS EDITION          -->
+<!--   Java Backend & Cloud Engineer · Spring Boot · AWS · Kafka · Microservices  -->
+<!-- ============================================================================== -->
 
 <!-- +============================ HERO ================================+ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050510,20:0f0030,48:1a0845,72:0b2548,100:050510&height=320&section=header&text=Tarique%20Hayat&fontSize=88&fontColor=f5f0ff&fontAlignY=36&fontAlign=50&stroke=7c3aed&strokeWidth=3&desc=Senior%20Backend%20Engineer%20%E2%80%94%20Java%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=56&descSize=21&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Senior Backend Engineer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:030014,15:0d0030,40:1a0845,70:0b2548,100:030014&height=360&section=header&text=Tarique%20Hayat&fontSize=92&fontColor=f5f0ff&fontAlignY=36&fontAlign=50&stroke=8b5cf6&strokeWidth=4&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%E2%80%94%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=56&descSize=23&descColor=a78bfa&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend & Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&duration=2800&pause=900&color=A78BFA&background=00000000&center=true&vCenter=true&width=860&height=52&lines=%F0%9F%9F%A2+Available+for+Senior+Backend+%26+Full-Stack+Roles;%F0%9F%9A%80+3%2B+Years+%7C+Java+%7C+Spring+Boot+%7C+AWS+%7C+Microservices;%E2%9A%A1+Event-Driven+Architecture+%7C+Apache+Kafka+%7C+RabbitMQ;%F0%9F%90%B3+Docker+%7C+Kubernetes+%7C+Jenkins+%7C+GitHub+Actions;%E2%98%81%EF%B8%8F+Cloud-Native+Systems+Deployed+on+AWS+EC2;%F0%9F%8F%97%EF%B8%8F+Designing+Systems+that+Survive+Production" alt="Animated headline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&duration=2800&pause=900&color=A78BFA&background=00000000&center=true&vCenter=true&width=860&height=52&lines=%F0%9F%9F%A2+Available+for+Senior+Java+Backend+%26+Cloud+Roles;%F0%9F%9A%80+3%2B+Years+%7C+Java+%7C+Spring+Boot+%7C+AWS+%7C+Microservices;%E2%9A%A1+Event-Driven+Architecture+%7C+Kafka+%7C+Resilience4j;%F0%9F%90%B3+Docker+%7C+Kubernetes+%7C+Jenkins+%7C+CI%2FCD+Pipelines;%E2%98%81%EF%B8%8F+Cloud-Native+on+AWS+EC2+%7C+S3+%7C+RDS;%F0%9F%8F%97%EF%B8%8F+Designing+Resilient+Systems+that+Survive+Production" alt="Animated headline" />
 </p>
 
 <!-- PROMINENT HIRE-ME BUTTON -->
@@ -38,7 +38,7 @@
 
 <!-- Status row -->
 <p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-Senior%20Backend%20%26%20Full--Stack-22C55E?style=for-the-badge&labelColor=064e3b" />&nbsp;
+  <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-Senior%20Backend%20%26%20Cloud%20Engineer-22C55E?style=for-the-badge&labelColor=064e3b" />&nbsp;
   <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=flat-square&labelColor=0d1117" />&nbsp;
   <img src="https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot-6DB33F?style=flat-square&labelColor=0d1117&logo=springboot&logoColor=6DB33F" />&nbsp;
   <img src="https://img.shields.io/badge/Cloud-AWS%20%7C%20Docker%20%7C%20K8s-FF9900?style=flat-square&labelColor=0d1117&logo=amazonaws&logoColor=FF9900" />&nbsp;
@@ -60,22 +60,25 @@
 <td width="58%" valign="top">
 
 ```yaml
-name         : "Tarique Hayat"
-role         : "Senior Backend Engineer"
-experience   : "3+ Years -- Java / Spring Boot / Cloud"
+name: "Tarique Hayat"
+role: "Java Backend & Cloud Engineer"
+experience: "3+ Years — Java / Spring Boot / AWS / Docker"
 
 backend:
-  - Spring Boot 3 / Spring Cloud / REST API
-  - Spring Security / JWT / OAuth2 / Hibernate
+  - Spring Boot 3 / Spring Cloud / Spring MVC
+  - Spring Security / JWT / OAuth2 / Hibernate / JPA
+  - Feign Client / Resilience4j / Netflix Eureka
 
-cloud        : "AWS (EC2, S3, RDS) / Docker / Kubernetes"
-messaging    : "Apache Kafka / RabbitMQ / Redis"
-databases    : "PostgreSQL / MySQL / MongoDB"
-frontend     : "Angular 17 / TypeScript"
+cloud: "AWS (EC2, S3, RDS) / Docker / Kubernetes"
+messaging: "Apache Kafka / Event-Driven Architecture"
+databases: "PostgreSQL / MySQL / MongoDB / Redis"
+testing: "JUnit 5 / Mockito / JaCoCo / SonarQube"
+tools: "Maven / Postman / Swagger / IntelliJ IDEA"
 
-currently    : "Building High-Scale Microservices"
-location     : "Hyderabad / Kolkata / Delhi / Remote"
-status       : "OPEN TO SENIOR ENGINEERING ROLES"
+currently: "Building High-Scale FinTech Microservices"
+focus:     "Resilient · Scalable · Observable Systems"
+location:  "Hyderabad / Kolkata / Delhi / Remote"
+status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 ```
 
 </td>
@@ -93,7 +96,7 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <br/>
 
 <img src="https://img.shields.io/badge/%E2%9A%A1-Event--Driven%20Architectures-F59E0B?style=flat-square&labelColor=0d1117" /><br/>
-<sub>Kafka · RabbitMQ · Redis Streams · DLQ</sub>
+<sub>Kafka · Saga Choreography · DLQ · Compensating Transactions</sub>
 
 <br/>
 
@@ -112,8 +115,83 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=99999&color=A78BFA&center=true&vCenter=true&width=860&height=44&lines=%22I+don%27t+just+write+code+%E2%80%94+I+engineer+scalable+systems+that+survive+production.%22" alt="quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=99999&color=A78BFA&center=true&vCenter=true&width=900&height=44&lines=%22I+don%27t+write+code+%E2%80%94+I+engineer+resilient%2C+cloud-native+systems+built+for+production.%22" alt="quote" />
 </p>
+
+<br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+</p>
+
+<!-- +================================ TROPHIES ===============================+ -->
+<h2 align="center">🏆 GitHub Achievements</h2>
+<br/>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=HayatTarique&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" width="100%" alt="GitHub Trophies" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+</p>
+
+<!-- +========================= ENGINEERING HIGHLIGHTS ====================+ -->
+<h2 align="center">📌 Engineering Highlights</h2>
+<br/>
+
+<table align="center" width="92%">
+  <tr>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%F0%9F%94%8C-11%20Spring%20Boot%20Microservices-7C3AED?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Engineered a live <strong>FinTech platform across 11 independent Spring Boot microservices</strong> — fully modular, independently deployable, production-grade</sub>
+      <br/><br/>
+    </td>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%E2%8F%B1-30%25%20Faster%20Inter--Service%20Comms-22C55E?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Implemented <strong>Netflix Eureka + Spring Cloud Gateway</strong>, improving inter-service communication efficiency by ~30%</sub>
+      <br/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F-Resilience4j%20Circuit%20Breaker-F59E0B?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Applied <strong>Resilience4j circuit breakers + load balancing</strong>, strengthening system reliability and reducing cascading failure impact</sub>
+      <br/><br/>
+    </td>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%F0%9F%94%90-AWS%20Secrets%20Manager-2496ED?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Secured configurations via <strong>AWS Secrets Manager</strong> with distributed tracing and centralized logging — faster incident resolution in production</sub>
+      <br/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%E2%9C%85-TDD%20%E2%80%94%20JUnit%205%20%2B%20Mockito-25A162?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Practised <strong>TDD with JUnit 5 + Mockito + JaCoCo</strong>, improving code stability and reducing regression risk across microservices</sub>
+      <br/><br/>
+    </td>
+    <td align="center" width="50%" valign="top">
+      <br/>
+      <img src="https://img.shields.io/badge/%F0%9F%9A%80-Zero--Downtime%20Migrations-E50914?style=for-the-badge&labelColor=0d1117" />
+      <br/><br/>
+      <sub>Re-architected legacy modules into Spring Boot microservices, reducing release effort by ~30% with <strong>zero-downtime rolling deployments</strong> on AWS</sub>
+      <br/><br/>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -131,25 +209,26 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <tr>
     <td align="center">
       <br/>
-      <h3>🏗️ Real Estate ERP Platform</h3>
+      <h3>🛒 E-Commerce Microservices Platform</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
-      <img src="https://img.shields.io/badge/Scale-10K%2B%20Listings-A78BFA?style=flat-square&labelColor=0d1117" />
-      <p><em>Enterprise multi-tenant property management SaaS</em></p>
+      <img src="https://img.shields.io/badge/Java_17-Spring_Boot_3-6DB33F?style=flat-square&labelColor=0d1117" />
+      <p><em>Distributed commerce platform built on Spring Cloud microservices</em></p>
       <p align="left">
-        Full-scale ERP on <strong>Spring Cloud Microservices</strong> — 8 independent services
-        (property listings, lease lifecycle, tenant management, billing engine,
-        document workflow, notifications) serving <strong>10,000+ listings</strong>.
-        Angular 17 frontend with OAuth2 SSO, RBAC and JWT-secured APIs.
+        Architected a distributed commerce application featuring <strong>API Gateway routing,
+        JWT authentication, catalog management and event-driven messaging</strong> across
+        independent services. Implemented <strong>Netflix Eureka</strong> for service discovery,
+        <strong>Resilience4j</strong> circuit breakers, Spring Security RBAC — containerized
+        with Docker and deployed via Jenkins CI/CD pipelines.
       </p>
       <p>
+        <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
         <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white" />
-        <img src="https://img.shields.io/badge/Angular_17-DD0031?style=flat-square&logo=angular&logoColor=white" />
         <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-        <img src="https://img.shields.io/badge/OAuth2-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT_%2F_OAuth2-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
       </p>
-      <a href="https://github.com/HayatTarique/real-estate-erp">
+      <a href="https://github.com/HayatTarique/ecommerce-microservices">
         <img src="https://img.shields.io/badge/%E2%86%92%20View%20Repository-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
       </a>
       <br/><br/>
@@ -158,50 +237,50 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <tr>
     <td align="center">
       <br/>
-      <h3>📬 Enterprise Mailing Engine</h3>
+      <h3>☁️ Spring Cloud Gateway &amp; Service Mesh</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
-      <img src="https://img.shields.io/badge/Throughput-50K%20Emails%2FBatch-F59E0B?style=flat-square&labelColor=0d1117" />
-      <p><em>High-volume template-driven email delivery system</em></p>
+      <img src="https://img.shields.io/badge/Pattern-API_Gateway_%2B_Eureka-A78BFA?style=flat-square&labelColor=0d1117" />
+      <p><em>API Gateway, service discovery and client-side load balancing</em></p>
       <p align="left">
-        Bulk email platform with <strong>FreeMarker + SMTP</strong> — handles
-        <strong>50,000+ emails per batch</strong> with dynamic templates, scheduled delivery,
-        bounce/retry handling and full delivery tracking dashboard.
-        Rate-limited async processing via Spring's task executor pool with Redis queue.
+        Demonstrates <strong>Spring Cloud Gateway</strong> with <strong>Spring Cloud Load Balancer
+        and Netflix Eureka</strong> for dynamic service discovery, intelligent API routing
+        and client-side load distribution across microservices. Includes route configuration,
+        filter chains and resilience patterns in a production-style setup.
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Spring_Cloud_Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white" />
+        <img src="https://img.shields.io/badge/Netflix_Eureka-E50914?style=flat-square&logo=netflix&logoColor=white" />
+        <img src="https://img.shields.io/badge/Load_Balancer-2496ED?style=flat-square&logo=spring&logoColor=white" />
+        <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      </p>
+      <a href="https://github.com/HayatTarique/cloud-gateway">
+        <img src="https://img.shields.io/badge/%E2%86%92%20View%20Repository-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
+      </a>
+      <br/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <br/>
+      <h3>⚡ Saga Choreography — Event-Driven Architecture</h3>
+      <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
+      <img src="https://img.shields.io/badge/Pattern-Saga_Choreography-F59E0B?style=flat-square&labelColor=0d1117" />
+      <p><em>Distributed transaction management using the Saga choreography pattern</em></p>
+      <p align="left">
+        Implements <strong>Saga choreography pattern</strong> for managing distributed transactions
+        across microservices without a central orchestrator. Each service publishes and listens
+        to domain events — ensuring <strong>eventual consistency, fault isolation and
+        compensating transactions</strong> on failure, aligned with production event-driven design.
       </p>
       <p>
         <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-        <img src="https://img.shields.io/badge/FreeMarker-009688?style=flat-square&logo=apache&logoColor=white" />
-        <img src="https://img.shields.io/badge/SMTP-EA4335?style=flat-square&logo=gmail&logoColor=white" />
-        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-      </p>
-      <a href="https://github.com/HayatTarique/springboot-mailer">
-        <img src="https://img.shields.io/badge/%E2%86%92%20View%20Repository-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
-      </a>
-      <br/><br/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <br/>
-      <h3>⚡ Kafka Microservice Platform</h3>
-      <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
-      <img src="https://img.shields.io/badge/Throughput-10K%2B%20Events%2FSec-2496ED?style=flat-square&labelColor=0d1117" />
-      <p><em>Production-grade event-driven streaming system</em></p>
-      <p align="left">
-        Distributed event platform processing <strong>10,000+ events/sec</strong> with
-        Apache Kafka — producers, consumers, dead-letter queues, exponential backoff
-        retry, consumer group partitioning and full fault tolerance.
-        Prometheus metrics + Zipkin distributed tracing across all services.
-      </p>
-      <p>
         <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
-        <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-        <img src="https://img.shields.io/badge/Zookeeper-E95420?style=flat-square&logo=apache&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
-        <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
+        <img src="https://img.shields.io/badge/Event--Driven-F59E0B?style=flat-square&logo=spring&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
       </p>
-      <a href="https://github.com/HayatTarique/kafka-integration">
+      <a href="https://github.com/HayatTarique/saga-choreography">
         <img src="https://img.shields.io/badge/%E2%86%92%20View%20Repository-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
       </a>
       <br/><br/>
@@ -210,24 +289,24 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <tr>
     <td align="center">
       <br/>
-      <h3>☁️ AWS CI/CD Pipeline</h3>
+      <h3>🔐 Spring Security — JWT Auth &amp; Swagger API Docs</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
-      <img src="https://img.shields.io/badge/Deploy%20Time-Under%203%20Min-22C55E?style=flat-square&labelColor=0d1117" />
-      <p><em>Zero-downtime automated deployment pipeline</em></p>
+      <img src="https://img.shields.io/badge/Pattern-JWT_%2B_RBAC_%2B_OAuth2-7C3AED?style=flat-square&labelColor=0d1117" />
+      <p><em>Production-grade Spring Security with JWT, role-based access and full Swagger docs</em></p>
       <p align="left">
-        End-to-end CI/CD pipeline with <strong>sub-3-minute deploy times</strong>:
-        automated build, test, SonarQube quality gate, Docker image build,
-        DockerHub push and zero-downtime rolling deployment to AWS EC2.
-        Jenkins Declarative Pipeline + GitHub Actions with full audit trail.
+        Implements <strong>Spring Security 6</strong> with stateless <strong>JWT authentication,
+        role-based authorization (RBAC)</strong> and OAuth2 support. Features token generation,
+        validation filters and secured endpoints — documented end-to-end with
+        <strong>OpenAPI / Swagger UI</strong> and H2 for fast in-memory testing.
       </p>
       <p>
-        <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-        <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white" />
-        <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" />
-        <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" />
+        <img src="https://img.shields.io/badge/Spring_Security_6-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT_%2F_OAuth2-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+        <img src="https://img.shields.io/badge/Swagger_%2F_OpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
+        <img src="https://img.shields.io/badge/H2_DB-00599C?style=flat-square&logo=h2&logoColor=white" />
       </p>
-      <a href="https://github.com/HayatTarique/aws-deployment">
+      <a href="https://github.com/HayatTarique/spring-security-jwt-h2-swagger">
         <img src="https://img.shields.io/badge/%E2%86%92%20View%20Repository-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
       </a>
       <br/><br/>
@@ -268,7 +347,7 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
       <br/>
       <img src="https://img.shields.io/badge/%F0%9F%90%B3-DevOps%20%26%20CI%2FCD-2496ED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
-      <sub>Containerises and orchestrates via Docker + Kubernetes with Jenkins and GitHub Actions pipelines end-to-end</sub>
+      <sub>Containerizes and orchestrates via Docker + Kubernetes with Jenkins and GitHub Actions pipelines end-to-end</sub>
       <br/><br/>
     </td>
     <td align="center" width="50%" valign="top">
@@ -301,6 +380,9 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" />
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" />
   <img src="https://img.shields.io/badge/JWT_%2F_OAuth2-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/Feign_Client-00C7B7?style=flat-square&logo=spring&logoColor=white" />
+  <img src="https://img.shields.io/badge/Resilience4j-FF6B35?style=flat-square&logo=spring&logoColor=white" />
+  <img src="https://img.shields.io/badge/Netflix_Eureka-E50914?style=flat-square&logo=netflix&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAPI_%2F_Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
 </p>
 
@@ -333,16 +415,24 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <img src="https://img.shields.io/badge/Redis_Cache-DC382D?style=flat-square&logo=redis&logoColor=white" />
 </p>
 
-<h4 align="center">&mdash; Frontend &amp; Tooling &mdash;</h4>
+<h4 align="center">&mdash; Testing &amp; Code Quality &mdash;</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=angular,ts,html,css,git,github,postman&theme=dark" /><br/><br/>
-  <img src="https://img.shields.io/badge/Angular_17-DD0031?style=flat-square&logo=angular&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" />
   <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Mockito-C5D9F1?style=flat-square&logo=java&logoColor=black" />
+  <img src="https://img.shields.io/badge/JaCoCo-E05C27?style=flat-square&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" />
+  <img src="https://img.shields.io/badge/Integration_Testing-22C55E?style=flat-square&logo=checkmarx&logoColor=white" />
+</p>
+
+<h4 align="center">&mdash; Dev Tools &mdash;</h4>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,postman,vscode&theme=dark" /><br/><br/>
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white" />
+  <img src="https://img.shields.io/badge/Agile_%2F_Scrum-7C3AED?style=flat-square&logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/Angular_(Basic_Knowledge)-DD0031?style=flat-square&logo=angular&logoColor=white" />
 </p>
 
 <br/>
@@ -356,8 +446,8 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
 <br/>
 
 ```
-  +===================================================================+
-  |             CLOUD-NATIVE MICROSERVICES ARCHITECTURE               |
+  +==================================================================+
+  |             CLOUD-NATIVE MICROSERVICES ARCHITECTURE              |
   +================+================+================+===============+
   |  API Gateway   |  Auth Service  |  Core Service  |  Notifier     |
   | (Spring Cloud  | (JWT / OAuth2  |  (Business     |  (Kafka       |
@@ -368,9 +458,9 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   |  PostgreSQL / MySQL (OLTP) |  Redis Cache  +  MongoDB (Docs)     |
   +============================+=====================================+
   |  Docker + Kubernetes (K8s) |  Jenkins CI/CD  |  AWS Cloud        |
-  +============================-=================-===================-+
+  +============================-=================-===================+
   |  Eureka * Zipkin Tracing * ELK Stack * Prometheus * Grafana      |
-  +===================================================================+
+  +==================================================================+
 ```
 
 <br/>
@@ -379,33 +469,24 @@ status       : "OPEN TO SENIOR ENGINEERING ROLES"
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= ENGINEERING METRICS =====================+ -->
-<h2 align="center">📊 Engineering Metrics</h2>
+<!-- +========================= GITHUB STATS ===========================+ -->
+<h2 align="center">📊 GitHub Stats</h2>
 <br/>
 
-<!-- Metrics: 2x2 grid — 2 cols ~190px each works on mobile and desktop -->
-<table align="center" width="88%">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0d1117" /><br/>
-      <sub>Professional Engineering</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="https://img.shields.io/badge/Microservices-15%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" /><br/>
-      <sub>Production Deployed</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://img.shields.io/badge/REST%20APIs-50%2B%20Designed-22C55E?style=for-the-badge&labelColor=0d1117" /><br/>
-      <sub>Enterprise Grade</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-10%2B%20Automated-2496ED?style=for-the-badge&labelColor=0d1117" /><br/>
-      <sub>Zero-Downtime</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Microservices-15%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/REST%20APIs-50%2B%20Designed-22C55E?style=for-the-badge&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-10%2B%20Automated-2496ED?style=for-the-badge&labelColor=0d1117" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&count_private=true" />
+  &nbsp;&nbsp;
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=8&hide=html,css" />
+</p>
 
 <br/>
 
@@ -484,8 +565,22 @@ jobs:
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= 2026 FOCUS =============================+ -->
-<h2 align="center">🎯 Current Focus &mdash; 2026</h2>
+<!-- +======================= 3D CONTRIBUTION LANDSCAPE ====================+ -->
+<h2 align="center">📐 3D Contribution Landscape</h2>
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-3d-contrib.vercel.app/api/isometric1/HayatTarique.svg?theme=tokyonight" width="100%" alt="3D Contribution Landscape" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+</p>
+
+<!-- +========================= CURRENT FOCUS =============================+ -->
+<h2 align="center">🎯 Current Focus</h2>
 <br/>
 
 <!-- Current Focus: single column — clean stacked layout on any screen size -->
@@ -577,7 +672,7 @@ jobs:
 </p>
 
 <p align="center">
-  <sub><strong>📍 Available for Senior Backend &amp; Full-Stack roles — Hyderabad · Kolkata · Delhi · Remote</strong></sub>
+  <sub><strong>📍 Available for Senior Java Backend &amp; Cloud Engineer roles — Hyderabad · Kolkata · Delhi · Remote</strong></sub>
 </p>
 
 <p align="center">
