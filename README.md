@@ -5,12 +5,9 @@
 
 <!-- +============================ HERO ================================+ -->
 
-<!-- TOP GLOWING BAR -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7c3aed,50:a855f7,100:7c3aed&height=4&section=header" width="100%" />
-
-<!-- MAIN HERO BANNER -->
+<!-- MAIN HERO BANNER — self-hosted SVG, served from this repo, never breaks -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0030,40:2d0080,100:0d0030&height=280&section=header&text=Tarique%20Hayat&fontSize=90&fontColor=f0e6ff&fontAlignY=38&fontAlign=50&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=60&descSize=21&descColor=c9b8ff&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
+  <img src="./assets/hero.svg" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
