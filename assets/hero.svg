@@ -1,113 +1,216 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
-  <defs>
-    <!-- Deep space background gradient -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#0d0030"/>
-      <stop offset="35%"  stop-color="#1a0060"/>
-      <stop offset="65%"  stop-color="#2d0080"/>
-      <stop offset="100%" stop-color="#0d0030"/>
-    </linearGradient>
-    <!-- Top accent bar -->
-    <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#7c3aed"/>
-      <stop offset="50%"  stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-    </linearGradient>
-    <!-- Title glow filter -->
-    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <!-- Star definitions -->
-    <radialGradient id="star" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Left glow orb -->
-    <radialGradient id="leftOrb" cx="30%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Right glow orb -->
-    <radialGradient id="rightOrb" cx="70%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Waving bottom path clip -->
-    <clipPath id="waveClip">
-      <path d="M0,0 L1200,0 L1200,240 Q1050,280 900,258 Q750,236 600,260 Q450,284 300,258 Q150,232 0,252 Z"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<defs>
+<style>
+/* Star twinkle */
+@keyframes t1 { 0%,100%{opacity:.12} 50%{opacity:.92} }
+@keyframes t2 { 0%,100%{opacity:.28} 50%{opacity:1.00} }
+@keyframes t3 { 0%,100%{opacity:.07} 50%{opacity:.72} }
+/* Top bar shimmer sweep */
+@keyframes shimmer {
+  from { transform: translateX(-1300px); }
+  to   { transform: translateX(2500px);  }
+}
+/* Text entrance */
+@keyframes nameIn {
+  from { opacity:0; transform:translateY(24px); }
+  to   { opacity:1; transform:translateY(0);    }
+}
+@keyframes descIn {
+  from { opacity:0; transform:translateY(15px); }
+  to   { opacity:1; transform:translateY(0);    }
+}
+/* Divider line grow from centre */
+@keyframes lineGrow {
+  from { stroke-dashoffset: 440; }
+  to   { stroke-dashoffset: 0;   }
+}
+/* Bottom wave bob */
+@keyframes waveBob1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes waveBob2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)}  }
+/* Accent dot pulse */
+@keyframes dotPulse { 0%,100%{opacity:.40;transform:scale(1.0)} 50%{opacity:1.0;transform:scale(2.1)} }
+/* Star classes */
+.s1  { animation: t1 2.8s  .00s infinite ease-in-out; }
+.s2  { animation: t2 3.5s  .40s infinite ease-in-out; }
+.s3  { animation: t1 2.2s  .80s infinite ease-in-out; }
+.s4  { animation: t3 4.1s  .20s infinite ease-in-out; }
+.s5  { animation: t2 3.0s 1.20s infinite ease-in-out; }
+.s6  { animation: t1 2.6s  .60s infinite ease-in-out; }
+.s7  { animation: t3 3.8s 1.00s infinite ease-in-out; }
+.s8  { animation: t2 2.4s 1.50s infinite ease-in-out; }
+.s9  { animation: t1 3.2s  .30s infinite ease-in-out; }
+.s10 { animation: t3 2.9s  .70s infinite ease-in-out; }
+.s11 { animation: t2 4.0s 1.10s infinite ease-in-out; }
+.s12 { animation: t1 2.7s 1.80s infinite ease-in-out; }
+.s13 { animation: t3 3.3s  .50s infinite ease-in-out; }
+.s14 { animation: t2 2.5s 1.40s infinite ease-in-out; }
+.s15 { animation: t1 3.6s  .90s infinite ease-in-out; }
+.s16 { animation: t3 2.3s 1.60s infinite ease-in-out; }
+.s17 { animation: t2 4.2s  .10s infinite ease-in-out; }
+.s18 { animation: t1 3.0s 2.00s infinite ease-in-out; }
+.s19 { animation: t3 2.8s 1.30s infinite ease-in-out; }
+.s20 { animation: t2 3.4s  .80s infinite ease-in-out; }
+.s21 { animation: t1 2.5s 1.90s infinite ease-in-out; }
+.s22 { animation: t3 3.1s  .45s infinite ease-in-out; }
+.s23 { animation: t2 2.9s 1.55s infinite ease-in-out; }
+.s24 { animation: t1 3.7s  .25s infinite ease-in-out; }
+/* Element animations */
+.shimmer    { animation: shimmer  5.0s linear               1.0s infinite; }
+.name-group { animation: nameIn   1.0s cubic-bezier(.16,1,.3,1) .3s  both; }
+.desc-group { animation: descIn   1.0s cubic-bezier(.16,1,.3,1) .8s  both; }
+.divline    { stroke-dasharray:440; animation: lineGrow 1.6s ease-out .5s both; }
+.wave1      { transform-box:fill-box; animation: waveBob1 7s ease-in-out infinite; }
+.wave2      { transform-box:fill-box; animation: waveBob2 9s ease-in-out infinite; }
+.dot1       { transform-box:fill-box; transform-origin:center; animation: dotPulse 2.8s ease-in-out .0s  infinite; }
+.dot2       { transform-box:fill-box; transform-origin:center; animation: dotPulse 2.8s ease-in-out .9s  infinite; }
+.dot3       { transform-box:fill-box; transform-origin:center; animation: dotPulse 2.8s ease-in-out 1.8s infinite; }
+</style>
+<!-- Background -->
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%"   stop-color="#050015"/>
+  <stop offset="30%"  stop-color="#0e003e"/>
+  <stop offset="70%"  stop-color="#190058"/>
+  <stop offset="100%" stop-color="#050015"/>
+</linearGradient>
+<!-- Top bar -->
+<linearGradient id="topBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%"   stop-color="#6d28d9"/>
+  <stop offset="30%"  stop-color="#7c3aed"/>
+  <stop offset="50%"  stop-color="#a855f7"/>
+  <stop offset="70%"  stop-color="#7c3aed"/>
+  <stop offset="100%" stop-color="#6d28d9"/>
+</linearGradient>
+<!-- Shimmer -->
+<linearGradient id="shimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+  <stop offset="40%"  stop-color="white" stop-opacity="0.85"/>
+  <stop offset="60%"  stop-color="white" stop-opacity="0.85"/>
+  <stop offset="100%" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<!-- Aurora orb gradients -->
+<radialGradient id="orbL" cx="50%" cy="50%" r="50%">
+  <stop offset="0%"   stop-color="#7c3aed" stop-opacity="0.50"/>
+  <stop offset="60%"  stop-color="#4c1d95" stop-opacity="0.18"/>
+  <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orbR" cx="50%" cy="50%" r="50%">
+  <stop offset="0%"   stop-color="#a855f7" stop-opacity="0.42"/>
+  <stop offset="60%"  stop-color="#6d28d9" stop-opacity="0.15"/>
+  <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orbT" cx="50%" cy="50%" r="50%">
+  <stop offset="0%"   stop-color="#3b82f6" stop-opacity="0.26"/>
+  <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+</radialGradient>
+<!-- Text glow filter with SMIL animated stdDeviation (glow pulse) -->
+<filter id="glow" x="-22%" y="-55%" width="144%" height="210%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur">
+    <animate attributeName="stdDeviation"
+      values="3.5;7.5;3.5" dur="3.5s" begin="1.6s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.5,0,0.5,1; 0.5,0,0.5,1"/>
+  </feGaussianBlur>
+  <feMerge>
+    <feMergeNode in="blur"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<!-- Star softening -->
+<filter id="sf" x="-150%" y="-150%" width="400%" height="400%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="0.65"/>
+</filter>
+<!-- Clip for shimmer bar -->
+<clipPath id="barClip"><rect width="1200" height="5"/></clipPath>
+</defs>
 
-  <!-- Base background -->
-  <rect width="1200" height="280" fill="url(#bg)"/>
+<!-- BACKGROUND -->
+<rect width="1200" height="300" fill="url(#bg)"/>
 
-  <!-- Ambient glow orbs -->
-  <rect width="1200" height="280" fill="url(#leftOrb)"/>
-  <rect width="1200" height="280" fill="url(#rightOrb)"/>
+<!-- AURORA ORBS — SMIL animated translate -->
+<ellipse cx="300" cy="162" rx="405" ry="268" fill="url(#orbL)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0,0; 46,-36; 0,0" dur="14s" repeatCount="indefinite"
+    calcMode="spline" keyTimes="0;0.5;1"
+    keySplines="0.5,0,0.5,1; 0.5,0,0.5,1"/>
+</ellipse>
+<ellipse cx="900" cy="138" rx="362" ry="250" fill="url(#orbR)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0,0; -40,30; 0,0" dur="17s" repeatCount="indefinite"
+    calcMode="spline" keyTimes="0;0.5;1"
+    keySplines="0.5,0,0.5,1; 0.5,0,0.5,1"/>
+</ellipse>
+<ellipse cx="600" cy="72" rx="325" ry="204" fill="url(#orbT)">
+  <animateTransform attributeName="transform" type="translate"
+    values="0,0; 26,22; -22,-16; 0,0" dur="21s" repeatCount="indefinite"
+    calcMode="spline" keyTimes="0;0.33;0.66;1"
+    keySplines="0.5,0,0.5,1; 0.5,0,0.5,1; 0.5,0,0.5,1"/>
+</ellipse>
 
-  <!-- Top accent bar (4px) -->
-  <rect x="0" y="0" width="1200" height="4" fill="url(#topBar)"/>
+<!-- STAR FIELD — 24 twinkling stars -->
+<circle class="s1"  cx="50"   cy="26"  r="1.4" fill="white"   filter="url(#sf)"/>
+<circle class="s2"  cx="132"  cy="14"  r="0.9" fill="white"   filter="url(#sf)"/>
+<circle class="s3"  cx="228"  cy="40"  r="1.2" fill="#e9d5ff" filter="url(#sf)"/>
+<circle class="s4"  cx="350"  cy="16"  r="1.6" fill="white"   filter="url(#sf)"/>
+<circle class="s5"  cx="472"  cy="36"  r="0.8" fill="#ddd6fe" filter="url(#sf)"/>
+<circle class="s6"  cx="578"  cy="11"  r="1.3" fill="white"   filter="url(#sf)"/>
+<circle class="s7"  cx="686"  cy="42"  r="0.9" fill="white"   filter="url(#sf)"/>
+<circle class="s8"  cx="762"  cy="18"  r="1.5" fill="#e9d5ff" filter="url(#sf)"/>
+<circle class="s9"  cx="876"  cy="32"  r="1.1" fill="white"   filter="url(#sf)"/>
+<circle class="s10" cx="968"  cy="14"  r="1.2" fill="#ddd6fe" filter="url(#sf)"/>
+<circle class="s11" cx="1066" cy="44"  r="1.4" fill="white"   filter="url(#sf)"/>
+<circle class="s12" cx="1156" cy="24"  r="0.9" fill="white"   filter="url(#sf)"/>
+<circle class="s13" cx="68"   cy="162" r="1.0" fill="white"   filter="url(#sf)"/>
+<circle class="s14" cx="178"  cy="132" r="1.2" fill="#e9d5ff" filter="url(#sf)"/>
+<circle class="s15" cx="244"  cy="186" r="0.8" fill="white"   filter="url(#sf)"/>
+<circle class="s16" cx="110"  cy="96"  r="1.3" fill="#ddd6fe" filter="url(#sf)"/>
+<circle class="s17" cx="1038" cy="150" r="1.1" fill="white"   filter="url(#sf)"/>
+<circle class="s18" cx="1128" cy="120" r="1.3" fill="#e9d5ff" filter="url(#sf)"/>
+<circle class="s19" cx="1090" cy="88"  r="0.9" fill="white"   filter="url(#sf)"/>
+<circle class="s20" cx="1165" cy="176" r="1.0" fill="#ddd6fe" filter="url(#sf)"/>
+<circle class="s21" cx="92"   cy="232" r="0.9" fill="white"   filter="url(#sf)"/>
+<circle class="s22" cx="200"  cy="214" r="1.1" fill="#e9d5ff" filter="url(#sf)"/>
+<circle class="s23" cx="330"  cy="246" r="0.8" fill="white"   filter="url(#sf)"/>
+<circle class="s24" cx="1092" cy="230" r="1.2" fill="#ddd6fe" filter="url(#sf)"/>
 
-  <!-- Stars field -->
-  <circle cx="45"  cy="32"  r="1.2" fill="url(#star)" opacity="0.8"/>
-  <circle cx="120" cy="18"  r="0.8" fill="url(#star)" opacity="0.6"/>
-  <circle cx="210" cy="44"  r="1.0" fill="url(#star)" opacity="0.7"/>
-  <circle cx="330" cy="22"  r="1.4" fill="url(#star)" opacity="0.9"/>
-  <circle cx="460" cy="38"  r="0.9" fill="url(#star)" opacity="0.5"/>
-  <circle cx="570" cy="14"  r="1.1" fill="url(#star)" opacity="0.7"/>
-  <circle cx="680" cy="48"  r="0.7" fill="url(#star)" opacity="0.6"/>
-  <circle cx="750" cy="20"  r="1.3" fill="url(#star)" opacity="0.8"/>
-  <circle cx="870" cy="36"  r="0.8" fill="url(#star)" opacity="0.5"/>
-  <circle cx="960" cy="16"  r="1.0" fill="url(#star)" opacity="0.7"/>
-  <circle cx="1060" cy="42" r="1.2" fill="url(#star)" opacity="0.8"/>
-  <circle cx="1150" cy="26" r="0.9" fill="url(#star)" opacity="0.6"/>
-  <circle cx="80"  cy="220" r="0.9" fill="url(#star)" opacity="0.4"/>
-  <circle cx="190" cy="200" r="1.1" fill="url(#star)" opacity="0.6"/>
-  <circle cx="310" cy="230" r="0.7" fill="url(#star)" opacity="0.4"/>
-  <circle cx="440" cy="210" r="1.0" fill="url(#star)" opacity="0.5"/>
-  <circle cx="720" cy="225" r="0.8" fill="url(#star)" opacity="0.4"/>
-  <circle cx="900" cy="215" r="1.2" fill="url(#star)" opacity="0.6"/>
-  <circle cx="1080" cy="230" r="0.9" fill="url(#star)" opacity="0.4"/>
+<!-- TOP ACCENT BAR + SHIMMER SWEEP -->
+<rect x="0" y="0" width="1200" height="5" fill="url(#topBarGrad)"/>
+<g clip-path="url(#barClip)">
+  <rect class="shimmer" x="-200" y="0" width="200" height="5" fill="url(#shimGrad)"/>
+</g>
 
-  <!-- Subtle horizontal divider line under name -->
-  <line x1="420" y1="152" x2="780" y2="152" stroke="#7c3aed" stroke-width="0.6" opacity="0.5"/>
+<!-- DIVIDER LINE (grows from edges to centre) -->
+<line class="divline" x1="380" y1="162" x2="820" y2="162"
+  stroke="#7c3aed" stroke-width="0.8" opacity="0.55"/>
 
-  <!-- Name: Tarique Hayat -->
-  <text
-    x="600" y="132"
-    text-anchor="middle"
-    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
-    font-size="72"
-    font-weight="700"
-    letter-spacing="2"
-    fill="#f0e6ff"
-    filter="url(#glow)"
-  >Tarique Hayat</text>
+<!-- HERO NAME — fade-in + animated glow pulse (SMIL on filter) -->
+<g class="name-group">
+  <text x="600" y="140" text-anchor="middle"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="76" font-weight="700" letter-spacing="3"
+    fill="#f0e6ff" filter="url(#glow)">Tarique Hayat</text>
+</g>
 
-  <!-- Descriptor line -->
-  <text
-    x="600" y="185"
-    text-anchor="middle"
-    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
-    font-size="22"
-    font-weight="400"
-    letter-spacing="1"
-    fill="#c9b8ff"
-    opacity="0.92"
-  >Java Backend &amp; Cloud Engineer  |  Spring Boot  |  AWS  |  Microservices</text>
+<!-- SUBTITLE — fade-in with slight delay -->
+<g class="desc-group">
+  <text x="600" y="196" text-anchor="middle"
+    font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+    font-size="21.5" font-weight="400" letter-spacing="1.2"
+    fill="#c4b5fd">Java Backend &amp; Cloud Engineer · Spring Boot · AWS · Microservices</text>
+</g>
 
-  <!-- Tech dot separators accent -->
-  <circle cx="600" cy="222" r="2.5" fill="#7c3aed" opacity="0.7"/>
-  <circle cx="580" cy="222" r="1.8" fill="#a855f7" opacity="0.5"/>
-  <circle cx="620" cy="222" r="1.8" fill="#a855f7" opacity="0.5"/>
+<!-- THREE PULSING ACCENT DOTS -->
+<circle class="dot1" cx="576" cy="222" r="3" fill="#7c3aed"/>
+<circle class="dot2" cx="600" cy="222" r="4" fill="#a855f7"/>
+<circle class="dot3" cx="624" cy="222" r="3" fill="#7c3aed"/>
 
-  <!-- Bottom wave shape -->
-  <path d="M0,248 Q150,232 300,252 Q450,272 600,252 Q750,232 900,248 Q1050,264 1200,248 L1200,280 L0,280 Z"
-    fill="#0d0030" opacity="0.6"/>
-  <path d="M0,260 Q200,245 400,262 Q600,279 800,262 Q1000,245 1200,258 L1200,280 L0,280 Z"
-    fill="#0d0030" opacity="0.5"/>
+<!-- BOTTOM WAVES — gentle oscillating bob -->
+<g class="wave1">
+  <path d="M0,258 Q150,244 300,260 Q450,276 600,260 Q750,244 900,258 Q1050,272 1200,258 L1200,300 L0,300 Z"
+    fill="#060018" opacity="0.75"/>
+</g>
+<g class="wave2">
+  <path d="M0,272 Q200,258 400,272 Q600,286 800,272 Q1000,258 1200,270 L1200,300 L0,300 Z"
+    fill="#050015" opacity="0.92"/>
+</g>
+
 </svg>
