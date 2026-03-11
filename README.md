@@ -10,7 +10,7 @@
 
 <!-- MAIN HERO BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:030014,25:0d0140,55:1a0845,80:0b2548,100:030014&height=320&section=header&text=Tarique%20Hayat&fontSize=88&fontColor=f5f0ff&fontAlignY=42&fontAlign=50&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=62&descSize=22&descColor=c9b8ff&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0030,40:2d0080,100:0d0030&height=280&section=header&text=Tarique%20Hayat&fontSize=90&fontColor=f0e6ff&fontAlignY=38&fontAlign=50&desc=Java%20Backend%20%26%20Cloud%20Engineer%20%7C%20Spring%20Boot%20%7C%20AWS%20%7C%20Microservices&descAlignY=60&descSize=21&descColor=c9b8ff&descAlign=50&animation=twinkling" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
 </p>
 
 <!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
