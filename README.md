@@ -29,9 +29,6 @@
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-hayattarique3-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1a2e" />
   </a>&nbsp;
-  <a href="https://www.linkedin.com/in/hayat-tariq" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1a2e" />
-  </a>&nbsp;
   <a href="https://github.com/HayatTarique" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-HayatTarique-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e" />
   </a>&nbsp;
