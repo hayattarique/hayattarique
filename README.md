@@ -674,9 +674,6 @@ jobs:
 <p align="center">
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email%20Me-hayattarique3%40gmail.com-EA4335?style=for-the-badge&labelColor=0d1117" />
-  </a>&nbsp;
-  <a href="https://www.linkedin.com/in/hayat-tariq" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%92%BC%20LinkedIn-Connect%20Now-0A66C2?style=for-the-badge&labelColor=0d1117" />
   </a>
 </p>
 
