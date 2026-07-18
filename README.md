@@ -349,9 +349,9 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 </p>
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&count_private=true&cache_seconds=86400" />
   &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=8&hide=html,css" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=8&hide=html,css&cache_seconds=86400" />
 </p>
 
 <p align="center">
