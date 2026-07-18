@@ -1,30 +1,21 @@
-<!-- ============================================================================== -->
-<!--   TARIQUE HAYAT · GITHUB PROFILE README · v7 · WORLD-CLASS EDITION          -->
-<!--   Java Backend & Cloud Engineer · Spring Boot · AWS · Kafka · Microservices  -->
-<!-- ============================================================================== -->
+<!-- ============================================================ -->
+<!--   TARIQUE HAYAT · GITHUB PROFILE README · v10               -->
+<!-- ============================================================ -->
 
-<!-- +============================ HERO ================================+ -->
-
-<!-- MAIN HERO BANNER — self-hosted SVG, absolute raw URL so GitHub profile resolves it -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/hayattarique/hayattarique/main/assets/hero.svg" width="100%" alt="Tarique Hayat — Java Backend and Cloud Engineer" />
 </p>
 
-<!-- HIRE SIGNAL FIRST — recruiter sees availability in 2 seconds -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&duration=2800&pause=900&color=A78BFA&background=00000000&center=true&vCenter=true&width=860&height=52&lines=%F0%9F%9F%A2+Available+for+Senior+Java+Backend+%26+Cloud+Roles;%F0%9F%9A%80+3%2B+Years+%7C+Java+%7C+Spring+Boot+%7C+AWS+%7C+Microservices;%E2%9A%A1+Event-Driven+Architecture+%7C+Kafka+%7C+Resilience4j;%F0%9F%90%B3+Docker+%7C+Kubernetes+%7C+Jenkins+%7C+CI%2FCD+Pipelines;%E2%98%81%EF%B8%8F+Cloud-Native+on+AWS+EC2+%7C+S3+%7C+RDS;%F0%9F%8F%97%EF%B8%8F+Designing+Resilient+Systems+that+Survive+Production" alt="Animated headline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2800&pause=900&color=A78BFA&background=00000000&center=true&vCenter=true&width=860&height=52&lines=%F0%9F%9F%A2+Available+for+Senior+Java+Backend+%26+Cloud+Roles;%F0%9F%9A%80+3%2B+Years+%7C+Java+%7C+Spring+Boot+%7C+AWS+%7C+Microservices;%E2%9A%A1+Event-Driven+Architecture+%7C+Kafka+%7C+Resilience4j;%F0%9F%90%B3+Docker+%7C+Kubernetes+%7C+Jenkins+%7C+CI%2FCD+Pipelines;%E2%98%81%EF%B8%8F+Cloud-Native+on+AWS+EC2+%7C+S3+%7C+RDS" alt="Animated headline" />
 </p>
 
-<!-- PROMINENT HIRE-ME BUTTON -->
 <p align="center">
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20AVAILABLE%20FOR%20HIRE-Senior%20Backend%20Engineer-22C55E?style=for-the-badge&labelColor=064e3b" />
   </a>
 </p>
 
-<br/>
-
-<!-- Social links -->
 <p align="center">
   <a href="mailto:hayattarique3@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-hayattarique3-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1a2e" />
@@ -35,7 +26,6 @@
   <img src="https://komarev.com/ghpvc/?username=HayatTarique&style=for-the-badge&color=7C3AED&label=PROFILE+VIEWS&abbreviated=true" />
 </p>
 
-<!-- Status row -->
 <p align="center">
   <img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-Senior%20Backend%20%26%20Cloud%20Engineer-22C55E?style=for-the-badge&labelColor=064e3b" />&nbsp;
   <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=flat-square&labelColor=0d1117" />&nbsp;
@@ -44,19 +34,12 @@
   <img src="https://img.shields.io/badge/Location-Hyderabad%20%7C%20Delhi%20%7C%20Kolkata-7C3AED?style=flat-square&labelColor=0d1117" />
 </p>
 
-<br/>
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +============================ ABOUT ME ============================+ -->
-<h2 align="center">🧠 About Me</h2>
-<br/>
-
-<table align="center" width="90%">
-<tr>
-<td width="58%" valign="top">
+<!-- ============================ ABOUT ============================ -->
+## 🧠 About Me
 
 ```yaml
 name: "Tarique Hayat"
@@ -80,80 +63,24 @@ location:  "Hyderabad / Kolkata / Delhi / Remote"
 status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 ```
 
-</td>
-<td width="42%" valign="top" align="center">
-
-<br/>
-
-**What I Build**
-
-<br/>
-
-<img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F-Cloud--Native%20Microservices-7C3AED?style=flat-square&labelColor=0d1117" /><br/>
-<sub>Production-grade · High Availability · Auto-scaling</sub>
-
-<br/>
-
-<img src="https://img.shields.io/badge/%E2%9A%A1-Event--Driven%20Architectures-F59E0B?style=flat-square&labelColor=0d1117" /><br/>
-<sub>Kafka · Saga Choreography · DLQ · Compensating Transactions</sub>
-
-<br/>
-
-<img src="https://img.shields.io/badge/%F0%9F%94%84-Zero--Downtime%20CI%2FCD-22C55E?style=flat-square&labelColor=0d1117" /><br/>
-<sub>Jenkins · GitHub Actions · AWS EC2</sub>
-
-<br/>
-
-<img src="https://img.shields.io/badge/%F0%9F%8F%97%EF%B8%8F-Distributed%20Systems-2496ED?style=flat-square&labelColor=0d1117" /><br/>
-<sub>CQRS · Event Sourcing · API Gateway · Eureka</sub>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=99999&color=A78BFA&center=true&vCenter=true&width=900&height=44&lines=%22I+don%27t+write+code+%E2%80%94+I+engineer+resilient%2C+cloud-native+systems+built+for+production.%22" alt="quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=17&pause=99999&color=A78BFA&center=true&vCenter=true&width=900&height=40&lines=%22I+don%27t+write+code+%E2%80%94+I+engineer+resilient%2C+cloud-native+systems+built+for+production.%22" alt="quote" />
 </p>
 
 <br/>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
-</p>
-
-<!-- +================================ TROPHIES ===============================+ -->
-<h2 align="center">🏆 GitHub Achievements</h2>
-<br/>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&count_private=true&include_all_commits=true" height="175em" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=donut&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=6&hide=html,css,shell" height="175em" alt="Top Languages" />
-</p>
-
-<br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
-</p>
-
-<!-- +========================= ENGINEERING HIGHLIGHTS ====================+ -->
-<h2 align="center">📌 Engineering Highlights</h2>
-<br/>
+<!-- ======================= ENGINEERING HIGHLIGHTS ======================= -->
+## 📌 Engineering Highlights
 
 <table align="center" width="92%">
   <tr>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%8C-11%20Spring%20Boot%20Microservices-7C3AED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Engineered a live <strong>FinTech platform across 11 independent Spring Boot microservices</strong> — fully modular, independently deployable, production-grade</sub>
       <br/><br/>
     </td>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%E2%8F%B1-30%25%20Faster%20Inter--Service%20Comms-22C55E?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Implemented <strong>Netflix Eureka + Spring Cloud Gateway</strong>, improving inter-service communication efficiency by ~30%</sub>
@@ -162,14 +89,12 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   </tr>
   <tr>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F-Resilience4j%20Circuit%20Breaker-F59E0B?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Applied <strong>Resilience4j circuit breakers + load balancing</strong>, strengthening system reliability and reducing cascading failure impact</sub>
       <br/><br/>
     </td>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%90-AWS%20Secrets%20Manager-2496ED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Secured configurations via <strong>AWS Secrets Manager</strong> with distributed tracing and centralized logging — faster incident resolution in production</sub>
@@ -178,14 +103,12 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   </tr>
   <tr>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%E2%9C%85-TDD%20%E2%80%94%20JUnit%205%20%2B%20Mockito-25A162?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Practised <strong>TDD with JUnit 5 + Mockito + JaCoCo</strong>, improving code stability and reducing regression risk across microservices</sub>
       <br/><br/>
     </td>
     <td align="center" width="50%" valign="top">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%9A%80-Zero--Downtime%20Migrations-E50914?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Re-architected legacy modules into Spring Boot microservices, reducing release effort by ~30% with <strong>zero-downtime rolling deployments</strong> on AWS</sub>
@@ -197,19 +120,15 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= FEATURED PROJECTS ======================+ -->
-<!-- Moved BEFORE Tech Arsenal — recruiters see proof within 10 seconds  -->
-<h2 align="center">🧩 Featured Projects</h2>
-<br/>
+<!-- ======================= FEATURED PROJECTS ======================= -->
+## 🧩 Featured Projects
 
-<!-- Projects: single-column — each card full width, works on all screen sizes -->
 <table align="center" width="92%">
   <tr>
     <td align="center">
-      <br/>
       <h3>🛒 E-Commerce Microservices Platform</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
       <img src="https://img.shields.io/badge/Java_17-Spring_Boot_3-6DB33F?style=flat-square&labelColor=0d1117" />
@@ -237,7 +156,6 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <h3>☁️ Spring Cloud Gateway &amp; Service Mesh</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
       <img src="https://img.shields.io/badge/Pattern-API_Gateway_%2B_Eureka-A78BFA?style=flat-square&labelColor=0d1117" />
@@ -263,7 +181,6 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <h3>⚡ Saga Choreography — Event-Driven Architecture</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
       <img src="https://img.shields.io/badge/Pattern-Saga_Choreography-F59E0B?style=flat-square&labelColor=0d1117" />
@@ -289,7 +206,6 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <h3>🔐 Spring Security — JWT Auth &amp; Swagger API Docs</h3>
       <img src="https://img.shields.io/badge/Status-Active-22C55E?style=flat-square&labelColor=0d1117" />&nbsp;
       <img src="https://img.shields.io/badge/Pattern-JWT_%2B_RBAC_%2B_OAuth2-7C3AED?style=flat-square&labelColor=0d1117" />
@@ -318,58 +234,11 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= VALUE PROPOSITION ======================+ -->
-<h2 align="center">💼 What I Bring to Your Team</h2>
-<br/>
-
-<!-- Value Prop: 2x2 grid — readable on mobile (2 cols ~190px each) and desktop -->
-<table align="center" width="92%">
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <br/>
-      <img src="https://img.shields.io/badge/%F0%9F%8F%97%EF%B8%8F-System%20Architect-7C3AED?style=for-the-badge&labelColor=0d1117" />
-      <br/><br/>
-      <sub>Designs distributed microservice systems with API Gateway, service mesh, Eureka discovery and Zipkin tracing</sub>
-      <br/><br/>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <br/>
-      <img src="https://img.shields.io/badge/%E2%9A%A1-Event%20Streaming-F59E0B?style=for-the-badge&labelColor=0d1117" />
-      <br/><br/>
-      <sub>Builds Kafka pipelines with DLQ, exponential backoff retry, consumer group partitioning and full observability</sub>
-      <br/><br/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" valign="top">
-      <br/>
-      <img src="https://img.shields.io/badge/%F0%9F%90%B3-DevOps%20%26%20CI%2FCD-2496ED?style=for-the-badge&labelColor=0d1117" />
-      <br/><br/>
-      <sub>Containerizes and orchestrates via Docker + Kubernetes with Jenkins and GitHub Actions pipelines end-to-end</sub>
-      <br/><br/>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <br/>
-      <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F-Cloud%20Native-FF9900?style=for-the-badge&labelColor=0d1117" />
-      <br/><br/>
-      <sub>Deploys production workloads to AWS with zero-downtime rolling deployments, autoscaling and RDS/S3 integrations</sub>
-      <br/><br/>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
-</p>
-
-<!-- +========================= TECH ARSENAL ===========================+ -->
-<h2 align="center">⚡ Tech Arsenal</h2>
-<br/>
+<!-- ============================ TECH ARSENAL ============================ -->
+## ⚡ Tech Arsenal
 
 <h4 align="center">&mdash; Backend Core &mdash;</h4>
 <p align="center">
@@ -439,12 +308,11 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= SYSTEM ARCHITECTURE ====================+ -->
-<h2 align="center">🏛️ System Architecture</h2>
-<br/>
+<!-- ======================= SYSTEM ARCHITECTURE ======================= -->
+## 🏛️ System Architecture
 
 ```
   +==================================================================+
@@ -460,36 +328,31 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
   +============================+=====================================+
   |  Docker + Kubernetes (K8s) |  Jenkins CI/CD  |  AWS Cloud        |
   +============================-=================-===================+
-  |  Eureka * Zipkin Tracing * ELK Stack * Prometheus * Grafana      |
+  |  Eureka · Zipkin Tracing · ELK Stack · Prometheus · Grafana      |
   +==================================================================+
 ```
 
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= GITHUB STATS ===========================+ -->
-<h2 align="center">📊 GitHub Stats</h2>
-<br/>
+<!-- ============================ GITHUB STATS ============================ -->
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://img.shields.io/badge/Experience-3%2B%20Years-A78BFA?style=for-the-badge&labelColor=0d1117" />&nbsp;
-  <img src="https://img.shields.io/badge/Microservices-15%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" />&nbsp;
+  <img src="https://img.shields.io/badge/Microservices-11%2B%20Built-F59E0B?style=for-the-badge&labelColor=0d1117" />&nbsp;
   <img src="https://img.shields.io/badge/REST%20APIs-50%2B%20Designed-22C55E?style=for-the-badge&labelColor=0d1117" />&nbsp;
   <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-10%2B%20Automated-2496ED?style=for-the-badge&labelColor=0d1117" />
 </p>
-
-<br/>
 
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=HayatTarique&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=f59e0b&text_color=c9d1d9&ring_color=7c3aed&count_private=true" />
   &nbsp;&nbsp;
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HayatTarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=8&hide=html,css" />
 </p>
-
-<br/>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=HayatTarique&theme=tokyonight&hide_border=true&background=0d1117&stroke=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=f5f0ff&sideNums=f5f0ff" alt="GitHub Streak" />
@@ -498,12 +361,11 @@ status:    "OPEN TO SENIOR BACKEND & CLOUD ROLES"
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= CICD PIPELINE ==========================+ -->
-<h2 align="center">⚙️ CI/CD Pipeline &mdash; Production Example</h2>
-<br/>
+<!-- ============================ CI/CD ============================ -->
+## ⚙️ CI/CD Pipeline &mdash; Production Example
 
 ```yaml
 # Production-Grade Java CI/CD — GitHub Actions  (real pipeline I've built)
@@ -549,32 +411,15 @@ jobs:
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= ACTIVITY GRAPH =========================+ -->
-<h2 align="center">📈 Contribution Activity</h2>
-<br/>
+<!-- ============================ ACTIVITY ============================ -->
+## 📈 Contribution Activity
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=HayatTarique&theme=tokyo-night&hide_border=true&area=true&area_color=7c3aed&color=a78bfa&line=7c3aed&point=f59e0b&bg_color=0d1117&custom_title=Tarique%20Hayat%20%E2%80%94%20Contribution%20Graph" alt="Contribution Activity Graph" width="96%" />
 </p>
-
-<br/>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
-</p>
-
-<!-- +====================== CONTRIBUTION INSIGHTS ======================+ -->
-<h2 align="center">📐 Contribution Insights</h2>
-<br/>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HayatTarique&theme=tokyonight" width="98%" alt="Contribution Timeline" />
-</p>
-
-<br/>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HayatTarique&theme=tokyonight" width="32%" alt="Repos by Language" />&nbsp;
@@ -585,18 +430,15 @@ jobs:
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +========================= CURRENT FOCUS =============================+ -->
-<h2 align="center">🎯 Current Focus</h2>
-<br/>
+<!-- ============================ FOCUS ============================ -->
+## 🎯 Current Focus
 
-<!-- Current Focus: single column — clean stacked layout on any screen size -->
 <table align="center" width="72%">
   <tr>
     <td align="center">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%A7%20Building-Advanced%20K8s%20Orchestration-326CE5?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Helm charts, Horizontal Pod Autoscaling, custom operators and multi-cluster deployments</sub>
@@ -605,7 +447,6 @@ jobs:
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%93%90%20Mastering-System%20Design%20at%20Scale-7C3AED?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Designing systems for 1M+ concurrent users — sharding, CQRS, event sourcing, distributed transactions</sub>
@@ -614,7 +455,6 @@ jobs:
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <img src="https://img.shields.io/badge/%F0%9F%94%8D%20Exploring-Observability%20Stack-E6522C?style=for-the-badge&labelColor=0d1117" />
       <br/><br/>
       <sub>Prometheus, Grafana, OpenTelemetry and ELK Stack for full production visibility and incident response</sub>
@@ -626,32 +466,27 @@ jobs:
 <br/>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b2548,100:1a0845&height=3&width=100%25" width="100%" alt="divider" />
 </p>
 
-<!-- +====================== ENGINEERING PHILOSOPHY =====================+ -->
-<h2 align="center">💡 Engineering Philosophy</h2>
-<br/>
+<!-- ============================ PHILOSOPHY ============================ -->
+## 💡 Engineering Philosophy
 
-<!-- Philosophy: single column — always readable regardless of screen width -->
 <table align="center" width="72%">
   <tr>
     <td align="center">
-      <br/>
       <h4>🔥 Design for Failure</h4>
       <p><sub>Every distributed system will fail. I build with circuit breakers, bulkheads, graceful degradation and automated recovery from day one.</sub></p>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <h4>🔭 Observability First</h4>
       <p><sub>Code that cannot be monitored in production is unfinished. Structured logs, distributed traces and health metrics are non-negotiable.</sub></p>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <br/>
       <h4>⚙️ Automate Everything</h4>
       <p><sub>If you do it twice, automate it. CI/CD, infra provisioning, test coverage gates — manual steps are technical debt disguised as process.</sub></p>
     </td>
@@ -660,11 +495,7 @@ jobs:
 
 <br/>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11e8-908a-139a6edaec5c.gif" width="100%" alt="divider" />
-</p>
-
-<!-- +============================ FOOTER ==============================+ -->
+<!-- ============================ FOOTER ============================ -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050510,25:0b2548,55:1a0845,80:0f0030,100:050510&height=160&section=footer&animation=twinkling" width="100%" alt="footer" />
 </p>
