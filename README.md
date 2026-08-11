@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="mailto:hayattarique3@gmail.com"><img src="https://img.shields.io/badge/Email-hayattarique3%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" /></a>&nbsp;
-  <img src="https://img.shields.io/badge/Experience-3%2B%20years-A78BFA?style=flat-square&labelColor=0d1117" alt="3+ years experience" />&nbsp;
+  <img src="https://img.shields.io/badge/Focus-Distributed%20Systems%20%C2%B7%20Cloud%20Native-A78BFA?style=flat-square&labelColor=0d1117" alt="Focus: distributed systems, cloud native" />&nbsp;
   <img src="https://img.shields.io/badge/Based%20in-Hyderabad%20%C2%B7%20Kolkata%20%C2%B7%20Delhi%20%C2%B7%20Remote-7C3AED?style=flat-square&labelColor=0d1117" alt="Location" />&nbsp;
   <img src="https://komarev.com/ghpvc/?username=hayattarique&style=flat-square&color=7C3AED&label=Profile+views&abbreviated=true" alt="Profile views" />
 </p>
@@ -27,16 +27,16 @@
 
 ## About
 
-I build backend systems that stay up. Three years of shipping Java services into production has
-made me opinionated about a short list of things: clear service boundaries, failure handled at the
-edge before it cascades, and enough telemetry to answer "what broke?" in minutes rather than hours.
+I build backend systems that stay up. Shipping Java services into production has made me
+opinionated about a short list of things: clear service boundaries, failure handled at the edge
+before it cascades, and enough telemetry to answer "what broke?" in minutes rather than hours.
 
 ```java
 public final class TariqueHayat implements BackendEngineer {
 
-    static final String ROLE       = "Java Backend & Cloud Engineer";
-    static final String EXPERIENCE = "3+ years shipping production microservices";
-    static final String BASE       = "Hyderabad · Kolkata · Delhi · Remote";
+    static final String ROLE  = "Java Backend & Cloud Engineer";
+    static final String FOCUS = "Resilient, observable, event-driven systems";
+    static final String BASE  = "Hyderabad · Kolkata · Delhi · Remote";
 
     @Override
     public Stack primaryStack() {
@@ -359,9 +359,9 @@ jobs:
 ## GitHub Activity
 
 <p align="center">
-  <img height="176em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=hayattarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=6&hide=html,css" alt="Most used languages" />
+  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=hayattarique&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=6&hide=html,css" alt="Most used languages by code volume" />
   &nbsp;
-  <img height="176em" src="https://streak-stats.demolab.com?user=hayattarique&theme=tokyonight&hide_border=true&background=0d1117&stroke=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=f5f0ff&sideNums=f5f0ff" alt="Contribution streak" />
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=hayattarique&theme=github_dark" alt="Top languages by commit" />
 </p>
 
 <p align="center">
