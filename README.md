@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=A78BFA&background=00000000&center=true&vCenter=true&width=820&height=44&lines=Java+17+%C2%B7+Spring+Boot+3+%C2%B7+Microservices+at+production+scale;Event-driven+systems+on+Kafka+%C2%B7+Saga+%C2%B7+Resilience4j;Cloud-native+delivery+on+AWS+%C2%B7+Docker+%C2%B7+Kubernetes+%C2%B7+Jenkins" alt="Java 17, Spring Boot 3, microservices, Kafka, AWS" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=3000&pause=1000&color=A78BFA&background=00000000&center=true&vCenter=true&width=820&height=44&lines=Java+17+%2F+21+%C2%B7+Spring+Boot+3+%2F+4+%C2%B7+Microservices+at+scale;Event-driven+systems+on+Kafka+%C2%B7+Saga+%C2%B7+Resilience4j;Cloud-native+delivery+on+AWS+%C2%B7+Docker+%C2%B7+Kubernetes+%C2%B7+Jenkins" alt="Java 17 and 21, Spring Boot 3 and 4, microservices, Kafka, AWS" />
 </p>
 
 <p align="center">
@@ -41,8 +41,9 @@ public final class TariqueHayat implements BackendEngineer {
     @Override
     public Stack primaryStack() {
         return Stack.of(
-            Language.JAVA_17,
-            Framework.SPRING_BOOT_3, Framework.SPRING_CLOUD, Framework.SPRING_SECURITY_6,
+            Language.JAVA_17, Language.JAVA_21,
+            Framework.SPRING_BOOT_3, Framework.SPRING_BOOT_4,
+            Framework.SPRING_CLOUD, Framework.SPRING_SECURITY_6,
             Messaging.KAFKA, Persistence.POSTGRES, Persistence.REDIS,
             Cloud.AWS, Platform.DOCKER, Platform.KUBERNETES
         );
@@ -121,7 +122,8 @@ get diagnosed from evidence rather than guesswork.
 
 ## System Architecture
 
-The reference architecture I build and operate — the same patterns run through the repositories below.
+The reference architecture I build and operate in production. The flagship project below implements
+the edge, discovery and security layers today; the event and observability tiers are its roadmap.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/hayattarique/hayattarique/main/assets/architecture.svg" width="100%" alt="Cloud-native microservices architecture: edge clients, Spring Cloud Gateway with Eureka discovery and Config Server, six domain services, Kafka event backbone, polyglot persistence, and the platform and observability layer" />
@@ -131,23 +133,53 @@ The reference architecture I build and operate — the same patterns run through
 
 ## Featured Work
 
+### 🛒 [Enterprise E-Commerce Microservices](https://github.com/hayattarique/ecommerce-microservice) &nbsp;·&nbsp; flagship
+
+<p>
+  <img src="https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21" />
+  <img src="https://img.shields.io/badge/Spring_Boot-4.1.0-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot 4.1.0" />
+  <img src="https://img.shields.io/badge/Spring_Cloud-2025.1.2-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud 2025.1.2" />
+  <img src="https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL 16" />
+  <img src="https://img.shields.io/badge/Flyway-12.4.0-CC0200?style=flat-square&logo=flyway&logoColor=white" alt="Flyway" />
+  <img src="https://img.shields.io/badge/MapStruct-1.6.3-E37B4A?style=flat-square&logo=java&logoColor=white" alt="MapStruct" />
+</p>
+
+A distributed e-commerce backend on **Java 21 and Spring Boot 4**, built sprint by sprint with
+review and refactoring between each. Seven Maven modules — `gateway`, `auth-service`,
+`user-service`, `discovery-server`, `utility-service`, `config-server`, under an
+`ecommerce-parent` reactor.
+
+| | |
+|---|---|
+| **A security starter, not a copied filter** | `utility-service` ships a real Spring Boot **auto-configuration** — a new service adds one dependency and inherits JWT validation, claim extraction and the auth entry point. Every bean is `@ConditionalOnMissingBean`, so a service overrides one without forking the library. |
+| **Full token lifecycle** | HS256 access tokens (1 h) plus persisted refresh tokens (7 d) with **rotation, revocation and token-type separation** — a refresh token is rejected anywhere an access token is expected. |
+| **Authorization with no network hop** | `users → roles → permissions` flattened into token claims, so every service authorizes locally. Refresh tokens deliberately omit them, so a permission change lands within one token lifetime instead of needing re-login. |
+| **Defence in depth** | JWT verified at the gateway *and* again inside each service — a request that bypasses the edge is still fully protected. |
+| **Separate service-to-service channel** | Internal API on its own filter chain, guarded by `X-Internal-Api-Key` compared in **constant time** — never touches the JWT path. |
+| **Migrations own the schema** | Flyway-versioned SQL with `ddl-auto=none`, so entity/schema drift fails at startup instead of silently mutating a database. |
+| **Stable error contract** | An `ErrorCode` interface and per-service enums produce machine-readable codes (`AUTH_101`, `SEC-002`) that clients branch on, instead of parsing prose. |
+| **Database per service** | No shared tables, no cross-service foreign keys — services linked by identifier only, exactly as if deployed independently. |
+
+Also: JPA auditing with `@CreatedBy`/`@LastModifiedBy` off the security context, `@Version`
+optimistic locking on every table, MapStruct mapping, a uniform `ApiResponse<T>` / `PageResponse<T>`
+envelope, and springdoc OpenAPI on both business services.
+
+**Shipping model.** A promotion workflow — `main ← stage ← qa ← dev ← feature/*`, one branch per
+ticket, merged by PR after review. All four environment branches plus live `feature/*` branches
+exist in the repo — the process is real, not just documented.
+
+**In flight.** Authentication is near complete; next are Testcontainers integration tests,
+Resilience4j, gateway rate limiting, Docker Compose and GitHub Actions — then the product, cart and
+order services, Kafka with a transactional outbox, and observability. The project README marks every
+item as shipped or planned rather than blurring the two.
+
+---
+
+### More work
+
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
-
-### 🛒 [ecommerce-microservice](https://github.com/hayattarique/ecommerce-microservice)
-
-`Java` · `Spring Boot 3` · `Spring Cloud` · `Docker`
-
-A full multi-module commerce platform — not a demo. Seven Maven modules split along real service
-boundaries: **config-server**, **discovery-server**, **gateway**, **auth-service**,
-**user-service**, **utility-service**, under a shared **ecommerce-parent** BOM.
-
-Centralised configuration, Eureka-backed discovery, gateway routing with a JWT filter chain, and
-per-service persistence.
-
-</td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### ☁️ [spring-cloud](https://github.com/hayattarique/spring-cloud)
 
@@ -161,9 +193,7 @@ Shows the part most tutorials skip: how config actually propagates across servic
 environments without redeploying every one of them.
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### ⚡ [saga-choreography](https://github.com/hayattarique/saga-choreography)
 
@@ -176,7 +206,7 @@ Covers the hard half of the pattern — eventual consistency, fault isolation, a
 transactions that unwind a failed flow cleanly.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### 🚪 [cloud-gateway](https://github.com/hayattarique/cloud-gateway)
 
@@ -217,12 +247,14 @@ Focused repositories, each isolating one production concern so the pattern is re
   <tr>
     <td width="20%" valign="middle"><b>Language &amp; Core</b></td>
     <td valign="middle">
-      <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17" />
-      <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot 3" />
+      <img src="https://img.shields.io/badge/Java_17_%2F_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17 and 21" />
+      <img src="https://img.shields.io/badge/Spring_Boot_3_%2F_4-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot 3 and 4" />
       <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud" />
       <img src="https://img.shields.io/badge/Spring_Security_6-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security 6" />
       <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Data JPA" />
       <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate" />
+      <img src="https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white" alt="Flyway" />
+      <img src="https://img.shields.io/badge/MapStruct-E37B4A?style=flat-square&logo=java&logoColor=white" alt="MapStruct" />
       <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
     </td>
   </tr>

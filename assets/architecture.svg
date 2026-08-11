@@ -56,7 +56,7 @@
 
 <!-- ============ TITLE ============ -->
 <text x="60" y="48" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="0.4" fill="#f0e6ff">Cloud-Native Microservices Architecture</text>
-<text x="1140" y="48" text-anchor="end" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="1.6" fill="#a855f7">JAVA 17 &#183; SPRING BOOT 3 &#183; AWS</text>
+<text x="1140" y="48" text-anchor="end" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="1.6" fill="#a855f7">JAVA 17 / 21 &#183; SPRING BOOT 3 / 4 &#183; AWS</text>
 <line x1="60" y1="62" x2="1140" y2="62" stroke="#3b1d6e" stroke-width="1"/>
 
 <!-- ============ LAYER 1 · CLIENTS ============ -->
