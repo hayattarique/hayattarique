@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="410" viewBox="0 0 880 410" role="img" aria-labelledby="t d">
+<title id="t">Impact</title>
+<desc id="d">11 Spring Boot microservices; about 30% faster inter-service calls; 50+ REST APIs designed; zero-downtime deployments; 10+ CI/CD pipelines automated; TDD with JUnit 5, Mockito and JaCoCo.</desc>
+<!-- To update a metric, edit the text of its tile below. Dark panel on purpose: it reads the same in GitHub light and dark themes, like the hero. -->
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#07021a"/>
+    <stop offset="55%" stop-color="#140640"/>
+    <stop offset="100%" stop-color="#07021a"/>
+  </linearGradient>
+  <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#6d28d9"/>
+    <stop offset="50%" stop-color="#a855f7"/>
+    <stop offset="100%" stop-color="#6d28d9"/>
+  </linearGradient>
+  <style>
+    .tile { fill: #ffffff; fill-opacity: .035; stroke: #7c3aed; stroke-opacity: .38; }
+    .num  { font: 700 40px 'Segoe UI','Helvetica Neue',Arial,sans-serif; fill: #c4b5fd; text-anchor: middle; }
+    .lab  { font: 600 16px 'Segoe UI','Helvetica Neue',Arial,sans-serif; fill: #f5f3ff; text-anchor: middle; }
+    .sub  { font: 400 13px 'Segoe UI','Helvetica Neue',Arial,sans-serif; fill: #b4b0d6; text-anchor: middle; }
+  </style>
+</defs>
+
+<rect width="880" height="410" rx="14" fill="url(#bg)"/>
+<rect x="0" y="0" width="880" height="4" rx="2" fill="url(#bar)"/>
+
+<!-- Row 1 -->
+<g transform="translate(20,20)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">11</text>
+  <text class="lab" x="135" y="92">Spring Boot microservices</text>
+  <text class="sub" x="135" y="118">Independently deployable services</text>
+  <text class="sub" x="135" y="136">powering a live FinTech platform</text>
+</g>
+<g transform="translate(304,20)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">~30%</text>
+  <text class="lab" x="135" y="92">Faster inter-service calls</text>
+  <text class="sub" x="135" y="118">Netflix Eureka + Spring Cloud Gateway</text>
+  <text class="sub" x="135" y="136">replacing hardcoded service routing</text>
+</g>
+<g transform="translate(588,20)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">50+</text>
+  <text class="lab" x="135" y="92">REST APIs designed</text>
+  <text class="sub" x="135" y="118">Versioned, documented with OpenAPI,</text>
+  <text class="sub" x="135" y="136">secured with JWT and role-based access</text>
+</g>
+
+<!-- Row 2 -->
+<g transform="translate(20,212)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">Zero</text>
+  <text class="lab" x="135" y="92">Downtime deployments</text>
+  <text class="sub" x="135" y="118">Rolling releases on AWS after</text>
+  <text class="sub" x="135" y="136">re-architecting legacy modules —</text>
+  <text class="sub" x="135" y="154">~30% less release effort</text>
+</g>
+<g transform="translate(304,212)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">10+</text>
+  <text class="lab" x="135" y="92">CI/CD pipelines automated</text>
+  <text class="sub" x="135" y="118">Build, test, SonarQube quality gate,</text>
+  <text class="sub" x="135" y="136">image push and deploy — no manual steps</text>
+</g>
+<g transform="translate(588,212)">
+  <rect class="tile" width="270" height="178" rx="10"/>
+  <text class="num" x="135" y="62">TDD</text>
+  <text class="lab" x="135" y="92">JUnit 5 · Mockito · JaCoCo</text>
+  <text class="sub" x="135" y="118">Coverage gates enforced in CI,</text>
+  <text class="sub" x="135" y="136">cutting regression risk across services</text>
+</g>
+</svg>
