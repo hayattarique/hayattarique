@@ -37,36 +37,13 @@
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="about-me">👨‍💻 About Me</h2>
+<a id="about-me"></a>
+<img src="assets/titles/about.svg" width="100%" alt="About Me" />
 
-<img align="right" width="380" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="" />
-
-```java
-class TariqueHayat {
-
-  String role = "Java Backend & Cloud Engineer";
-  String base = "Hyderabad · Kolkata · Delhi · Remote";
-
-  List<String> core = List.of(
-      "Java 17 / 21", "Spring Boot 3 / 4",
-      "Spring Cloud", "Kafka", "AWS");
-
-  List<String> genAI = List.of(
-      "Spring AI", "LangChain4j",
-      "LLMs", "RAG", "Tool calling");
-
-  List<String> focus = List.of(
-      "Microservices", "Event-driven",
-      "Observability", "CI/CD");
-
-  String building =
-      "High-throughput FinTech microservices";
-
-  boolean openToWork = true;
-}
-```
-
-<br clear="right"/>
+<p align="center">
+  <img src="assets/terminal.svg" width="60%" alt="Terminal: whoami prints tarique-hayat, Java backend and cloud engineer. In jshell, an Engineer record lists Java 21, Spring Boot 4 and Kafka; Spring AI, LangChain4j and RAG; AWS, Docker and Jenkins. me.openToWork() returns true." />
+  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="37%" alt="" />
+</p>
 
 I build backend systems that stay up. Shipping Java services into production has made me
 opinionated about a short list of things: **clear service boundaries**, **failure handled at the
@@ -93,7 +70,8 @@ chooses a tool, and the service still enforces the permission.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="impact">📈 Impact</h2>
+<a id="impact"></a>
+<img src="assets/titles/impact.svg" width="100%" alt="Impact" />
 
 <p align="center">
   <img src="assets/impact.svg" width="100%" alt="11 Spring Boot microservices powering a live FinTech platform. About 30% faster inter-service calls with Netflix Eureka and Spring Cloud Gateway replacing hardcoded routing. 50+ REST APIs, versioned, documented with OpenAPI and secured with JWT and role-based access. Zero-downtime rolling releases on AWS, with about 30% less release effort. 10+ CI/CD pipelines automated with build, test, SonarQube quality gate, image push and deploy. TDD with JUnit 5, Mockito and JaCoCo coverage gates enforced in CI." />
@@ -106,7 +84,8 @@ chooses a tool, and the service still enforces the permission.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="technology-arsenal">🛠️ Technology Arsenal</h2>
+<a id="technology-arsenal"></a>
+<img src="assets/titles/arsenal.svg" width="100%" alt="Technology Arsenal" />
 
 <details open>
 <summary><b>🤖 Generative AI &amp; LLMs</b></summary>
@@ -213,85 +192,19 @@ chooses a tool, and the service still enforces the permission.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="featured-projects">🌟 Featured Projects</h2>
+<a id="featured-projects"></a>
+<img src="assets/titles/projects.svg" width="100%" alt="Featured Projects" />
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<p align="center">
+  <a href="https://github.com/hayattarique/ecommerce-microservice"><img src="assets/projects/ecommerce.svg" width="49%" alt="E-Commerce Microservices, flagship: Java 21, Spring Boot 4.1, PostgreSQL, LangChain4j. Reusable JWT security starter, refresh-token rotation and RBAC, OpenTelemetry tracing to Jaeger, per-service Jenkins pipelines gated on health, and an LLM assistant service." /></a>
+  <a href="https://github.com/hayattarique/spring-ai"><img src="assets/projects/spring-ai.svg" width="49%" alt="Spring AI Lab, GenAI: eight Spring AI projects covering OpenAI, Ollama, Docker Model Runner and Bedrock; RAG with Qdrant and Tavily; a Redis semantic cache; PII masking; structured output and chat memory." /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/hayattarique/saga-choreography"><img src="assets/projects/saga.svg" width="49%" alt="Saga Choreography, event-driven: order and payment services coordinate over Kafka with compensating transactions and a shared event contract." /></a>
+  <a href="https://github.com/hayattarique/cloud-gateway"><img src="assets/projects/gateway.svg" width="49%" alt="Cloud Gateway, platform: Spring Cloud Gateway with Eureka discovery and Spring Cloud LoadBalancer, route configuration and filter chains." /></a>
+</p>
 
-### 🛒 E-Commerce Microservices
-**Flagship** · `Java 21` `Spring Boot 4.1` `Spring Cloud 2025.1` `PostgreSQL` `LangChain4j`
-
-A distributed e-commerce backend built sprint by sprint, with review and refactoring between
-each sprint. It has eight modules behind a gateway, and every service owns its own database.
-
-**Highlights:**
-- 🔐 Reusable JWT security **starter** (auto-configuration)
-- 🔄 Refresh-token rotation, revocation, RBAC
-- 🔭 OpenTelemetry → Jaeger tracing
-- 🚦 One Jenkins pipeline per service, gated on health
-- 🤖 LLM assistant service with LangChain4j
-
-<a href="https://github.com/hayattarique/ecommerce-microservice"><img src="https://img.shields.io/badge/View-Project-7C3AED?style=for-the-badge&logo=github" alt="View the e-commerce project" /></a>
-
-</td>
-<td width="50%" valign="top">
-
-### 🧠 Spring AI Lab
-**GenAI** · `Spring AI 2.0` `Spring Boot 4.1` `Qdrant` `Redis` `PostgreSQL`
-
-Eight hands-on Spring AI projects, each building on the last, from a first `ChatClient` call to
-a production-shaped RAG pipeline.
-
-**Highlights:**
-- 🔌 OpenAI, Ollama, Docker Model Runner, Amazon Bedrock
-- 📚 RAG with Qdrant and Tavily web search
-- ⚡ Semantic cache in Redis
-- 🛡️ PII masking before anything reaches the model
-- 🧾 Structured output and chat memory
-
-<a href="https://github.com/hayattarique/spring-ai"><img src="https://img.shields.io/badge/View-Project-7C3AED?style=for-the-badge&logo=github" alt="View the Spring AI project" /></a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ Saga Choreography
-**Event-driven** · `Java` `Apache Kafka` `Spring Boot`
-
-Distributed transactions with no central orchestrator. **order-service** and
-**payment-service** exchange domain events over Kafka through a shared contract module.
-
-**Highlights:**
-- 🔁 Choreographed saga over Kafka
-- ↩️ Compensating transactions on failure
-- 📦 Shared `common-dtos` event contract
-- 🧱 Fault isolation between services
-
-<a href="https://github.com/hayattarique/saga-choreography"><img src="https://img.shields.io/badge/View-Project-7C3AED?style=for-the-badge&logo=github" alt="View the saga choreography project" /></a>
-
-</td>
-<td width="50%" valign="top">
-
-### 🚪 Cloud Gateway &amp; Config
-**Platform** · `Spring Cloud Gateway` `Eureka` `Config Server` `Jenkins`
-
-The platform layer of a microservices estate: an API gateway with dynamic discovery, and
-centralised configuration that propagates without redeploying every service.
-
-**Highlights:**
-- 🧭 Eureka discovery and routing
-- ⚖️ Client-side load balancing
-- ⚙️ Config Server serving multiple services
-- 🔧 Committed Jenkinsfile
-
-<a href="https://github.com/hayattarique/cloud-gateway"><img src="https://img.shields.io/badge/View-Gateway-7C3AED?style=for-the-badge&logo=github" alt="View the cloud gateway project" /></a>
-<a href="https://github.com/hayattarique/spring-cloud"><img src="https://img.shields.io/badge/View-Config-7C3AED?style=for-the-badge&logo=github" alt="View the spring cloud config project" /></a>
-
-</td>
-</tr>
-</table>
+<p align="center"><sub>Also: <a href="https://github.com/hayattarique/spring-cloud"><b>spring-cloud</b></a>, a Config Server serving multiple services with a committed Jenkinsfile, plus ten focused repositories below.</sub></p>
 
 <details>
 <summary><b>&nbsp;🔎 Inside the flagship: the decisions that define it</b></summary>
@@ -341,7 +254,8 @@ Compose, zero-downtime deploys, then cart, order and payment with Kafka and an o
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="expertise-highlights">🏆 Expertise Highlights</h2>
+<a id="expertise-highlights"></a>
+<img src="assets/titles/expertise.svg" width="100%" alt="Expertise Highlights" />
 
 <table>
 <tr>
@@ -441,7 +355,8 @@ pipeline {
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="github-statistics">📊 GitHub Statistics</h2>
+<a id="github-statistics"></a>
+<img src="assets/titles/stats.svg" width="100%" alt="GitHub Statistics" />
 
 <p align="center">
   <picture>
@@ -464,7 +379,8 @@ pipeline {
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## 🧭 How I Work
+<a id="how-i-work"></a>
+<img src="assets/titles/principles.svg" width="100%" alt="How I Work" />
 
 <table>
 <tr>
@@ -494,27 +410,18 @@ CI/CD, provisioning and coverage gates. Manual steps are technical debt wearing 
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="get-in-touch">📫 Get In Touch</h2>
+<a id="get-in-touch"></a>
+<img src="assets/titles/contact.svg" width="100%" alt="Get In Touch" />
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/216644497-1951db19-8f3d-4e44-ac08-8e9d7e0d94a7.gif" width="260" alt="" />
 </p>
 
-<h3 align="center">Let's build something that stays up</h3>
-
 <p align="center">
-  Open to <b>Senior Java Backend &amp; Cloud Engineer</b> roles, including <b>GenAI on the JVM</b>
+  <a href="mailto:hayattarique3@gmail.com"><img src="assets/cta.svg" width="100%" alt="Let's build something that stays up. Open to Senior Java Backend and Cloud Engineer roles, including GenAI on the JVM: full-time, remote, or Hyderabad, Kolkata and Delhi. Email hayattarique3@gmail.com." /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Full--time-Open-22C55E?style=for-the-badge&labelColor=064e3b" alt="Open to full-time roles" />
-  <img src="https://img.shields.io/badge/Remote-Open-22C55E?style=for-the-badge&labelColor=064e3b" alt="Open to remote roles" />
-  <img src="https://img.shields.io/badge/Hyderabad_%C2%B7_Kolkata_%C2%B7_Delhi-Open-22C55E?style=for-the-badge&labelColor=064e3b" alt="Open to roles in Hyderabad, Kolkata and Delhi" />
-</p>
-
-<p align="center">
-  <a href="mailto:hayattarique3@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Email-hayattarique3%40gmail.com-EA4335?style=for-the-badge&labelColor=0d1117" alt="Email hayattarique3@gmail.com" /></a>
-</p>
+<p align="center"><sub>Prefer to copy it? <a href="mailto:hayattarique3@gmail.com">hayattarique3@gmail.com</a></sub></p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050510,25:0b2548,55:1a0845,80:0f0030,100:050510&height=120&section=footer&animation=twinkling" width="100%" alt="" />
