@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="440" viewBox="0 0 880 440" role="img" aria-label="Architecture of the e-commerce platform: a client calls the gateway, which validates the JWT and routes to auth-service, user-service, product-service and ai-service. Services share a JWT security starter, each owns its PostgreSQL schema, ai-service calls OpenAI through LangChain4j, and Kafka with an outbox is planned. Platform: Eureka discovery, config server, OpenTelemetry to Jaeger, Jenkins health-gated deploys.">
+<title>Architecture of the e-commerce platform: a client calls the gateway, which validates the JWT and routes to auth-service, user-service, product-service and ai-service. Services share a JWT security starter, each owns its PostgreSQL schema, ai-service calls OpenAI through LangChain4j, and Kafka with an outbox is planned. Platform: Eureka discovery, config server, OpenTelemetry to Jaeger, Jenkins health-gated deploys.</title>
+<style>
+  .pkt { opacity: 0; }
+  @supports (offset-path: path('M0,0 L1,1')) {
+    .pkt { animation: travel 2.6s cubic-bezier(.45,0,.55,1) infinite both; }
+  }
+  @keyframes travel { 0% { offset-distance: 0%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .pkt { animation: none !important; opacity: 0; } }</style>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#6e7681"/></marker></defs>
+<rect x=".5" y=".5" width="879" height="439" rx="10" fill="#0d1117" stroke="#30363d"/>
+<text x="28" y="32" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.4" text-anchor="start" fill="#6e7681">CLIENT</text>
+<text x="186" y="32" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.4" text-anchor="start" fill="#6e7681">EDGE</text>
+<text x="384" y="32" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.4" text-anchor="start" fill="#6e7681">SERVICES</text>
+<text x="624" y="32" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.4" text-anchor="start" fill="#6e7681">DATA &amp; AI</text>
+<rect x="24" y="166" width="124" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="36" y="188.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Client</text>
+<text x="36" y="204.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">REST + JWT</text>
+<rect x="182" y="166" width="156" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="194" y="188.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">gateway</text>
+<text x="194" y="204.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">:9999 · JWT at edge</text>
+<rect x="380" y="46" width="176" height="26" rx="6" fill="none" stroke="#a371f7" stroke-dasharray="4 3"/><text x="468" y="63" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" text-anchor="middle" fill="#a371f7">utility · JWT starter</text>
+<rect x="380" y="84" width="176" height="44" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="392" y="104.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">auth-service</text>
+<text x="392" y="120.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">:9091 · JWT issuance</text>
+<path d="M338,190 C356,190 360,106 378,106" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M338,190 C356,190 360,106 378,106');animation-delay:0.90s"/>
+<rect x="380" y="140" width="176" height="44" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="392" y="160.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">user-service</text>
+<text x="392" y="176.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">:9092 · RBAC</text>
+<path d="M338,190 C356,190 360,162 378,162" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M338,190 C356,190 360,162 378,162');animation-delay:1.25s"/>
+<rect x="380" y="196" width="176" height="44" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="392" y="216.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">product-service</text>
+<text x="392" y="232.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">:9093 · catalogue</text>
+<path d="M338,190 C356,190 360,218 378,218" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M338,190 C356,190 360,218 378,218');animation-delay:1.60s"/>
+<rect x="380" y="252" width="176" height="44" rx="6" fill="#161b22" stroke="#a371f7"/>
+<text x="392" y="272.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#a371f7">ai-service</text>
+<text x="392" y="288.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">:9094 · LangChain4j</text>
+<path d="M338,190 C356,190 360,274 378,274" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M338,190 C356,190 360,274 378,274');animation-delay:1.95s"/>
+<path d="M148,190 C166,190 162,190 180,190" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M148,190 C166,190 162,190 180,190');animation-delay:0.20s"/>
+<rect x="620" y="96" width="236" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="632" y="124.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">PostgreSQL 16</text>
+<text x="632" y="140.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">database per service · Flyway</text>
+<rect x="620" y="186" width="236" height="44" rx="6" fill="#161b22" stroke="#30363d" stroke-dasharray="5 4"/>
+<text x="632" y="206.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Kafka + outbox</text>
+<text x="632" y="222.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">planned</text>
+<rect x="620" y="252" width="236" height="44" rx="6" fill="#161b22" stroke="#a371f7"/>
+<text x="632" y="272.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#a371f7">OpenAI GPT</text>
+<text x="632" y="288.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#8d96a0">chosen tool → service call</text>
+<path d="M556,106 C584,106 590,126 618,126" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M556,162 C584,162 590,126 618,126" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M556,218 C584,218 590,126 618,126" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M556,218 C584,218 590,208 618,208" fill="none" stroke="#30363d" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+<path d="M556,274 C584,274 590,274 618,274" fill="none" stroke="#30363d" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle class="pkt" r="3" fill="#a371f7" style="offset-path:path('M556,274 C584,274 590,274 618,274');animation-delay:2.30s"/>
+<line x1="24" y1="330" x2="856" y2="330" stroke="#30363d"/>
+<text x="28" y="356" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="1.4" text-anchor="start" fill="#6e7681">PLATFORM</text>
+<rect x="24" y="368" width="199" height="34" rx="17" fill="#161b22" stroke="#30363d"/><circle cx="40" cy="385" r="3.5" fill="#3fb950"/><text x="50" y="389.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12" fill="#e6edf3">discovery-server · Eureka</text>
+<rect x="235" y="368" width="123" height="34" rx="17" fill="#161b22" stroke="#30363d"/><circle cx="251" cy="385" r="3.5" fill="#3fb950"/><text x="261" y="389.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12" fill="#e6edf3">config-server</text>
+<rect x="370" y="368" width="180" height="34" rx="17" fill="#161b22" stroke="#30363d"/><circle cx="386" cy="385" r="3.5" fill="#3fb950"/><text x="396" y="389.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12" fill="#e6edf3">OpenTelemetry → Jaeger</text>
+<rect x="562" y="368" width="180" height="34" rx="17" fill="#161b22" stroke="#30363d"/><circle cx="578" cy="385" r="3.5" fill="#3fb950"/><text x="588" y="389.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12" fill="#e6edf3">Jenkins · health-gated</text>
+<text x="856" y="424" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="11.5" text-anchor="end" fill="#6e7681">Dashed = planned. Every service owns its schema; no shared tables.</text>
+</svg>

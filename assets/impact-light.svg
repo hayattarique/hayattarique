@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="328" viewBox="0 0 880 328" role="img" aria-label="Impact: 11 Spring Boot microservices; ~30% Faster inter-service calls; 50+ REST APIs designed; Zero Downtime deployments; 10+ CI/CD pipelines automated; TDD JUnit 5 · Mockito · JaCoCo">
+<title>Impact: 11 Spring Boot microservices; ~30% Faster inter-service calls; 50+ REST APIs designed; Zero Downtime deployments; 10+ CI/CD pipelines automated; TDD JUnit 5 · Mockito · JaCoCo</title>
+
+<rect x=".5" y=".5" width="879" height="327" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<line x1="293.3" y1="1" x2="293.3" y2="327" stroke="#d0d7de"/>
+<line x1="586.7" y1="1" x2="586.7" y2="327" stroke="#d0d7de"/>
+<line x1="1" y1="164" x2="879" y2="164" stroke="#d0d7de"/>
+<text x="28.0" y="54" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">11</text>
+<text x="28.0" y="82" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">Spring Boot microservices</text>
+<text x="28.0" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Independently deployable services</text>
+<text x="28.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">powering a live FinTech platform</text>
+<text x="321.3" y="54" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">~30%</text>
+<text x="321.3" y="82" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">Faster inter-service calls</text>
+<text x="321.3" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Eureka and Spring Cloud Gateway</text>
+<text x="321.3" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">replacing hardcoded routing</text>
+<text x="614.7" y="54" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">50+</text>
+<text x="614.7" y="82" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">REST APIs designed</text>
+<text x="614.7" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Versioned, OpenAPI-documented,</text>
+<text x="614.7" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">secured with JWT and RBAC</text>
+<text x="28.0" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">Zero</text>
+<text x="28.0" y="246" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">Downtime deployments</text>
+<text x="28.0" y="270" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Rolling releases on AWS after</text>
+<text x="28.0" y="288" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">re-architecting legacy modules;</text>
+<text x="28.0" y="306" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">~30% less release effort</text>
+<text x="321.3" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">10+</text>
+<text x="321.3" y="246" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">CI/CD pipelines automated</text>
+<text x="321.3" y="270" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Build, test, SonarQube gate, image</text>
+<text x="321.3" y="288" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">push and deploy, no manual steps</text>
+<text x="614.7" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="34" font-weight="600" letter-spacing="-.6" fill="#1f2328">TDD</text>
+<text x="614.7" y="246" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#8250df">JUnit 5 · Mockito · JaCoCo</text>
+<text x="614.7" y="270" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Coverage gates enforced in CI,</text>
+<text x="614.7" y="288" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">cutting regression risk</text>
+</svg>

@@ -1,0 +1,2 @@
+# Keep the profile repo from being labelled "Python" because of the asset generator
+scripts/** linguist-detectable=false

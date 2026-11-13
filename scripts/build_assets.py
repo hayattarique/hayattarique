@@ -1,25 +1,32 @@
 #!/usr/bin/env python3
-"""Build the animated SVG assets used by the profile README.
+"""Build the SVG assets used by the profile README.
 
-Edit the data in this file (titles, impact tiles, project cards, terminal lines,
-contact card), then run:
+Every asset is written twice, as NAME-light.svg and NAME-dark.svg, using GitHub's own
+colour tokens, so the README can serve the right one with <picture> and the graphics
+sit natively on either theme. Edit the data below, then run:
 
     python3 scripts/build_assets.py
 
-Every asset is a self-contained dark card, so it reads the same in GitHub's light
-and dark themes. Animations are CSS where possible and switch off for visitors
-who set "reduce motion". Pass --static OUTDIR to write a motion-free copy for
-previewing (thumbnails capture the first frame, which is mid-animation).
+Only the hero has motion (request packets moving through a small service graph), and
+it switches off for visitors who prefer reduced motion.
 """
-import argparse
 import html
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent / "assets"
 
-FONT = "'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif"
-MONO = "'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,monospace"
-STATIC = False
+SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
+MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
+
+# GitHub Primer colour tokens
+THEMES = {
+    "light": dict(bg="#ffffff", surface="#f6f8fa", border="#d0d7de", text="#1f2328", muted="#656d76",
+                  subtle="#8c959f", accent="#8250df", link="#0969da", green="#1a7f37", java="#b07219",
+                  grid="#d0d7de", glow=".06", btn="#8250df"),
+    "dark":  dict(bg="#0d1117", surface="#161b22", border="#30363d", text="#e6edf3", muted="#8d96a0",
+                  subtle="#6e7681", accent="#a371f7", link="#4493f8", green="#3fb950", java="#b07219",
+                  grid="#30363d", glow=".12", btn="#8957e5"),
+}
 
 
 def esc(s):
@@ -30,349 +37,472 @@ def attr(s):
     return html.escape(s, quote=True)
 
 
-def defs_common():
-    return """
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#07021a"/><stop offset=".55" stop-color="#140640"/><stop offset="1" stop-color="#07021a"/>
-  </linearGradient>
-  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#6d28d9"/><stop offset=".5" stop-color="#c084fc"/><stop offset="1" stop-color="#6d28d9"/>
-  </linearGradient>
-  <linearGradient id="ic" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#c026d3"/>
-  </linearGradient>
-  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".85"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#c4b5fd"/><stop offset=".45" stop-color="#c4b5fd"/><stop offset=".5" stop-color="#ffffff"/><stop offset=".55" stop-color="#c4b5fd"/><stop offset="1" stop-color="#c4b5fd"/>
-    {sweep}
-  </linearGradient>""".replace(
-        "{sweep}",
-        "" if STATIC else
-        '<animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="4.5s" repeatCount="indefinite"/>',
-    )
+def svg(w, h, label, body, css=""):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+            f'role="img" aria-label="{attr(label)}">\n<title>{esc(label)}</title>\n'
+            f'{"<style>" + css + "</style>" if css else ""}\n{body}\n</svg>\n')
 
 
-BASE_CSS = """
-  .in   { animation: in .9s cubic-bezier(.16,1,.3,1) both; }
-  .up   { animation: up .8s cubic-bezier(.16,1,.3,1) both; }
-  .ring { transform-box: fill-box; transform-origin: center; animation: ring 2.6s ease-out infinite; }
-  .pulse{ animation: pulse 2s ease-in-out infinite; }
-  .comet{ stroke-dasharray: 90 910; animation: comet 7s linear infinite; }
-  .blink{ animation: blink 1s step-end infinite; }
-  .nudge{ animation: nudge 1.6s ease-in-out infinite; }
-  @keyframes in    { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: none; } }
-  @keyframes up    { from { opacity: 0; transform: translateY(14px); }  to { opacity: 1; transform: none; } }
-  @keyframes ring  { from { transform: scale(1); opacity: .7; } to { transform: scale(1.7); opacity: 0; } }
-  @keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
-  @keyframes comet { to { stroke-dashoffset: -1000; } }
-  @keyframes blink { 50% { opacity: 0; } }
-  @keyframes nudge { 0%,100% { transform: translateX(0); } 50% { transform: translateX(5px); } }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
-"""
+# ------------------------------------------------------------------ hero
 
+HERO = dict(
+    eyebrow="JAVA BACKEND & CLOUD ENGINEER",
+    name="Tarique Hayat",
+    line="Resilient, observable Java services, and LLM features on the JVM.",
+    status="Open to senior backend & cloud roles",
+    location="Hyderabad · Kolkata · Delhi · Remote",
+)
 
-def css(extra=""):
-    off = "\n  * { animation: none !important; }" if STATIC else ""
-    return f"<style>{BASE_CSS}{extra}{off}\n</style>"
-
-
-def round_rect_path(x, y, w, h, r):
-    return (f"M{x+r},{y} H{x+w-r} A{r},{r} 0 0 1 {x+w},{y+r} V{y+h-r} "
-            f"A{r},{r} 0 0 1 {x+w-r},{y+h} H{x+r} A{r},{r} 0 0 1 {x},{y+h-r} "
-            f"V{y+r} A{r},{r} 0 0 1 {x+r},{y} Z")
-
-
-def frame(w, h, r=16, comet=True):
-    """Dark panel with a faint border and a light that travels around it."""
-    p = round_rect_path(1, 1, w - 2, h - 2, r)
-    out = [f'<path d="{p}" fill="url(#bg)" stroke="#7c3aed" stroke-opacity=".35"/>']
-    if comet:
-        out.append(f'<path class="comet" d="{p}" pathLength="1000" fill="none" '
-                   f'stroke="url(#edge)" stroke-width="2.2" stroke-linecap="round"/>')
-    return "\n".join(out)
-
-
-def svg(w, h, label, body, extra_css=""):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-            f'viewBox="0 0 {w} {h}" role="img" aria-label="{attr(label)}">\n'
-            f"<title>{esc(label)}</title>\n<defs>{defs_common()}\n</defs>\n"
-            f"{css(extra_css)}\n{body}\n</svg>\n")
-
-
-# ---------------------------------------------------------------- titles
-
-TITLES = {
-    "about":     ("👋", "About Me",           "who I am and what I build"),
-    "impact":    ("📈", "Impact",             "results from production work"),
-    "arsenal":   ("🛠️", "Technology Arsenal", "the tools I ship with"),
-    "projects":  ("🌟", "Featured Projects",  "click a card to open the repo"),
-    "expertise": ("🏆", "Expertise",          "where I go deep"),
-    "stats":     ("📊", "GitHub Statistics",  "activity at a glance"),
-    "principles": ("🧭", "How I Work",        "principles I don't compromise on"),
-    "contact":   ("📫", "Get In Touch",       "open to senior backend & cloud roles"),
+# Service graph drawn on the right of the hero: name -> (centre x, centre y, highlighted)
+NODES = {
+    "gateway":  (840, 170, False),
+    "auth":     (985, 100, False),
+    "user":     (985, 170, False),
+    "ai · llm": (985, 240, True),
+    "kafka":    (1120, 135, False),
+    "postgres": (1120, 205, False),
 }
+EDGES = [("gateway", "auth"), ("gateway", "user"), ("gateway", "ai · llm"),
+         ("auth", "postgres"), ("user", "kafka"), ("user", "postgres"), ("ai · llm", "kafka")]
+NODE_W, NODE_H = 100, 32
 
 
-def build_title(icon, text, caption):
-    w, h = 900, 72
-    body = f"""{frame(w, h, 14)}
-<circle class="ring" cx="40" cy="36" r="21" fill="none" stroke="#a78bfa" stroke-width="2"/>
-<circle cx="40" cy="36" r="21" fill="url(#ic)"/>
-<text x="40" y="43" font-family="{FONT}" font-size="19" text-anchor="middle">{icon}</text>
-<text class="in" x="76" y="45" font-family="{FONT}" font-size="27" font-weight="700" fill="url(#tg)">{esc(text)}</text>
-<text class="in" style="animation-delay:.25s" x="{w-26}" y="44" font-family="{FONT}" font-size="14" fill="#a19ccb" text-anchor="end">{esc(caption)}</text>"""
-    return svg(w, h, text, body)
+def edge_path(a, b):
+    (x1, y1, _), (x2, y2, _) = NODES[a], NODES[b]
+    x1 += NODE_W / 2
+    x2 -= NODE_W / 2
+    return f"M{x1:.0f},{y1} C{x1+28:.0f},{y1} {x2-28:.0f},{y2} {x2:.0f},{y2}"
 
 
-# ---------------------------------------------------------------- impact
+def build_hero(t):
+    w, h = 1200, 320
+    css = """
+  .pkt { opacity: 0; }
+  @supports (offset-path: path('M0,0 L1,1')) {
+    .pkt { animation: travel 2.8s cubic-bezier(.45,0,.55,1) infinite both; }
+  }
+  @keyframes travel { 0% { offset-distance: 0%; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+  .live { animation: live 2.4s ease-in-out infinite; }
+  @keyframes live { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .pkt { animation: none; opacity: 0; } .live { animation: none; } }"""
+    out = [f"""<defs>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="{t['grid']}"/></pattern>
+  <radialGradient id="fade" cx="980" cy="170" r="330" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <mask id="m"><rect width="{w}" height="{h}" fill="url(#fade)"/></mask>
+  <radialGradient id="glow" cx="1000" cy="150" r="320" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="{t['accent']}" stop-opacity="{t['glow']}"/><stop offset="1" stop-color="{t['accent']}" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="card"><rect x="1" y="1" width="{w-2}" height="{h-2}" rx="12"/></clipPath>
+</defs>
+<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="12" fill="{t['bg']}" stroke="{t['border']}"/>
+<g clip-path="url(#card)">
+  <rect width="{w}" height="{h}" fill="url(#dots)" mask="url(#m)"/>
+  <rect width="{w}" height="{h}" fill="url(#glow)"/>
+</g>"""]
+    # text block
+    out.append(f'<text x="64" y="104" font-family="{MONO}" font-size="13" letter-spacing="2.4" fill="{t["accent"]}">{esc(HERO["eyebrow"])}</text>')
+    out.append(f'<text x="62" y="172" font-family="{SANS}" font-size="62" font-weight="600" letter-spacing="-1.2" fill="{t["text"]}">{esc(HERO["name"])}</text>')
+    out.append(f'<text x="64" y="214" font-family="{SANS}" font-size="20" fill="{t["muted"]}">{esc(HERO["line"])}</text>')
+    out.append(f'<circle class="live" cx="70" cy="257" r="4" fill="{t["green"]}"/>'
+               f'<text x="84" y="262" font-family="{MONO}" font-size="13" fill="{t["text"]}">{esc(HERO["status"])}'
+               f'<tspan fill="{t["subtle"]}">   /   </tspan><tspan fill="{t["muted"]}">{esc(HERO["location"])}</tspan></text>')
+    # service graph
+    for i, (a, b) in enumerate(EDGES):
+        d = edge_path(a, b)
+        out.append(f'<path d="{d}" fill="none" stroke="{t["border"]}" stroke-width="1.4"/>')
+        out.append(f'<circle class="pkt" r="3" fill="{t["accent"]}" '
+                   f'style="offset-path:path(\'{d}\');animation-delay:{(i * 0.45) % 2.8:.2f}s"/>')
+    for name, (cx, cy, hl) in NODES.items():
+        x, y = cx - NODE_W / 2, cy - NODE_H / 2
+        stroke = t["accent"] if hl else t["border"]
+        out.append(f'<rect x="{x:.0f}" y="{y:.0f}" width="{NODE_W}" height="{NODE_H}" rx="6" fill="{t["surface"]}" stroke="{stroke}"/>'
+                   f'<text x="{cx}" y="{cy+4.5}" font-family="{MONO}" font-size="12" text-anchor="middle" '
+                   f'fill="{t["accent"] if hl else t["muted"]}">{esc(name)}</text>')
+    label = f'{HERO["name"]}, Java backend and cloud engineer. {HERO["line"]} {HERO["status"]}: {HERO["location"]}.'
+    return svg(w, h, label, "\n".join(out), css)
+
+
+# ------------------------------------------------------------------ impact
 
 IMPACT = [
-    ("11",   "Spring Boot microservices", ["Independently deployable services", "powering a live FinTech platform"]),
-    ("~30%", "Faster inter-service calls", ["Netflix Eureka + Spring Cloud Gateway", "replacing hardcoded service routing"]),
-    ("50+",  "REST APIs designed",        ["Versioned, documented with OpenAPI,", "secured with JWT and role-based access"]),
-    ("Zero", "Downtime deployments",      ["Rolling releases on AWS after", "re-architecting legacy modules —", "~30% less release effort"]),
-    ("10+",  "CI/CD pipelines automated", ["Build, test, SonarQube quality gate,", "image push and deploy — no manual steps"]),
-    ("TDD",  "JUnit 5 · Mockito · JaCoCo", ["Coverage gates enforced in CI,", "cutting regression risk across services"]),
+    ("11",   "Spring Boot microservices",  ["Independently deployable services", "powering a live FinTech platform"]),
+    ("~30%", "Faster inter-service calls", ["Eureka and Spring Cloud Gateway", "replacing hardcoded routing"]),
+    ("50+",  "REST APIs designed",         ["Versioned, OpenAPI-documented,", "secured with JWT and RBAC"]),
+    ("Zero", "Downtime deployments",       ["Rolling releases on AWS after", "re-architecting legacy modules;", "~30% less release effort"]),
+    ("10+",  "CI/CD pipelines automated",  ["Build, test, SonarQube gate, image", "push and deploy, no manual steps"]),
+    ("TDD",  "JUnit 5 · Mockito · JaCoCo", ["Coverage gates enforced in CI,", "cutting regression risk"]),
 ]
 
 
-def build_impact():
-    w, h = 880, 410
-    tw, th, gap, pad = 270, 178, 14, 20
-    tiles = []
+def build_impact(t):
+    w, cols, ch = 880, 3, 164
+    rows = (len(IMPACT) + cols - 1) // cols
+    h = rows * ch
+    cw = w / cols
+    out = [f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="10" fill="{t["bg"]}" stroke="{t["border"]}"/>']
+    for c in range(1, cols):
+        out.append(f'<line x1="{c*cw:.1f}" y1="1" x2="{c*cw:.1f}" y2="{h-1}" stroke="{t["border"]}"/>')
+    for r in range(1, rows):
+        out.append(f'<line x1="1" y1="{r*ch}" x2="{w-1}" y2="{r*ch}" stroke="{t["border"]}"/>')
     for i, (num, label, subs) in enumerate(IMPACT):
-        col, row = i % 3, i // 3
-        x, y = pad + col * (tw + gap), pad + row * (th + gap)
-        tp = round_rect_path(0, 0, tw, th, 10)
-        lines = "\n".join(
-            f'  <text x="{tw/2}" y="{118 + j*18}" class="sub">{esc(s)}</text>' for j, s in enumerate(subs))
-        tiles.append(f"""<g transform="translate({x},{y})"><g class="up" style="animation-delay:{.12*i:.2f}s">
-  <path d="{tp}" fill="#ffffff" fill-opacity=".035" stroke="#7c3aed" stroke-opacity=".38"/>
-  <g clip-path="url(#tclip)"><rect class="tsweep" style="animation-delay:{.6*i:.1f}s" x="-120" y="0" width="120" height="2.5" fill="url(#shine)"/></g>
-  <text x="{tw/2}" y="62" class="num" filter="url(#glow)">{esc(num)}</text>
-  <text x="{tw/2}" y="92" class="lab">{esc(label)}</text>
-{lines}
-</g></g>""")
-    extra = f"""
-  .num {{ font: 700 40px {FONT}; fill: #c4b5fd; text-anchor: middle; }}
-  .lab {{ font: 600 16px {FONT}; fill: #f5f3ff; text-anchor: middle; }}
-  .sub {{ font: 400 13px {FONT}; fill: #b4b0d6; text-anchor: middle; }}
-  .tsweep {{ animation: tsweep 4.2s linear infinite; }}
-  @keyframes tsweep {{ from {{ transform: translateX(0); }} to {{ transform: translateX({tw+240}px); }} }}"""
-    body = f"""<defs>
-  <clipPath id="tclip"><rect x="0" y="0" width="{tw}" height="{th}" rx="10"/></clipPath>
-  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-</defs>
-{frame(w, h, 14)}
-{chr(10).join(tiles)}"""
-    alt = "; ".join(f"{n} {l}" for n, l, _ in IMPACT)
-    return svg(w, h, "Impact: " + alt, body, extra)
-
-
-# ---------------------------------------------------------------- project cards
-
-PROJECTS = {
-    "ecommerce": dict(
-        icon="🛒", tag="FLAGSHIP", title="E-Commerce Microservices",
-        repo="hayattarique/ecommerce-microservice",
-        chips=["Java 21", "Spring Boot 4.1", "PostgreSQL", "LangChain4j"],
-        desc=["Distributed e-commerce backend, built sprint by sprint:",
-              "eight modules behind a gateway, a database per service."],
-        bullets=["Reusable JWT security starter (auto-configuration)",
-                 "Refresh-token rotation, revocation and RBAC",
-                 "OpenTelemetry tracing exported to Jaeger",
-                 "Per-service Jenkins pipelines gated on health",
-                 "LLM assistant service built on LangChain4j"]),
-    "spring-ai": dict(
-        icon="🧠", tag="GENAI", title="Spring AI Lab",
-        repo="hayattarique/spring-ai",
-        chips=["Spring AI 2.0", "Qdrant", "Redis", "Ollama", "PostgreSQL"],
-        desc=["Eight hands-on Spring AI projects, each building on",
-              "the last, up to a production-shaped RAG pipeline."],
-        bullets=["OpenAI, Ollama, Docker Model Runner, Bedrock",
-                 "RAG with Qdrant and Tavily web search",
-                 "Semantic cache in Redis",
-                 "PII masking before anything reaches the model",
-                 "Structured output and persistent chat memory"]),
-    "saga": dict(
-        icon="⚡", tag="EVENT-DRIVEN", title="Saga Choreography",
-        repo="hayattarique/saga-choreography",
-        chips=["Java", "Apache Kafka", "Spring Boot"],
-        desc=["Distributed transactions with no central orchestrator:",
-              "order and payment services talk only through Kafka."],
-        bullets=["Choreographed saga over Kafka events",
-                 "Compensating transactions when payment fails",
-                 "Shared common-dtos event contract",
-                 "Fault isolation between services"]),
-    "gateway": dict(
-        icon="🚪", tag="PLATFORM", title="Cloud Gateway",
-        repo="hayattarique/cloud-gateway",
-        chips=["Spring Cloud Gateway", "Eureka", "LoadBalancer"],
-        desc=["The edge of a microservices estate: dynamic routing",
-              "with service discovery and client-side balancing."],
-        bullets=["Eureka discovery feeding gateway routes",
-                 "Spring Cloud LoadBalancer across instances",
-                 "Route configuration and filter chains",
-                 "Production-shaped setup, not a one-file demo"]),
-}
-
-
-def build_card(p):
-    w, h = 520, 440
-    out = [frame(w, h, 18)]
-    # header: icon tile + tag pill
-    out.append(f'<rect x="28" y="28" width="50" height="50" rx="13" fill="url(#ic)"/>'
-               f'<text x="53" y="62" font-family="{FONT}" font-size="25" text-anchor="middle">{p["icon"]}</text>')
-    pw = len(p["tag"]) * 9.7 + 42
-    out.append(f'<rect x="92" y="40" width="{pw:.0f}" height="26" rx="13" fill="#7c3aed" fill-opacity=".22" stroke="#a78bfa" stroke-opacity=".55"/>'
-               f'<circle class="pulse" cx="107" cy="53" r="4" fill="#22c55e"/>'
-               f'<text x="119" y="58" font-family="{FONT}" font-size="12" font-weight="700" letter-spacing="1.5" fill="#ddd6fe">{esc(p["tag"])}</text>')
-    out.append(f'<text class="in" x="28" y="114" font-family="{FONT}" font-size="25" font-weight="700" fill="url(#tg)">{esc(p["title"])}</text>')
-    # chips
-    x = 28
-    for i, c in enumerate(p["chips"]):
-        cw = len(c) * 7.3 + 22
-        assert x + cw <= w - 24, f"chips overflow in {p['title']}"
-        out.append(f'<g class="up" style="animation-delay:{.25 + .08*i:.2f}s">'
-                   f'<rect x="{x:.0f}" y="130" width="{cw:.0f}" height="26" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#a78bfa" stroke-opacity=".35"/>'
-                   f'<text x="{x + cw/2:.0f}" y="147.5" font-family="{FONT}" font-size="12.5" font-weight="600" fill="#e9d5ff" text-anchor="middle">{esc(c)}</text></g>')
-        x += cw + 8
-    # description
-    for j, line in enumerate(p["desc"]):
-        out.append(f'<text x="28" y="{190 + 22*j}" font-family="{FONT}" font-size="15" fill="#cfcbea">{esc(line)}</text>')
-    # bullets
-    for j, b in enumerate(p["bullets"]):
-        y = 248 + 26 * j
-        out.append(f'<g class="in" style="animation-delay:{.5 + .12*j:.2f}s">'
-                   f'<text x="28" y="{y}" font-family="{FONT}" font-size="13" fill="#a78bfa">▸</text>'
-                   f'<text x="46" y="{y}" font-family="{FONT}" font-size="14.5" fill="#ece9ff">{esc(b)}</text></g>')
-    # footer: call to action + repo path
-    out.append(f'<rect x="28" y="{h-60}" width="150" height="34" rx="17" fill="url(#ic)"/>'
-               f'<text x="48" y="{h-38}" font-family="{FONT}" font-size="14" font-weight="700" fill="#ffffff">View project</text>'
-               f'<text class="nudge" x="146" y="{h-38}" font-family="{FONT}" font-size="15" font-weight="700" fill="#ffffff">→</text>')
-    out.append(f'<text x="{w-28}" y="{h-38}" font-family="{MONO}" font-size="12" fill="#8f89bd" text-anchor="end">{esc(p["repo"])}</text>')
-    label = f'{p["title"]}: ' + " ".join(p["desc"]) + " " + "; ".join(p["bullets"]) + "."
+        x, y = (i % cols) * cw + 28, (i // cols) * ch
+        out.append(f'<text x="{x:.1f}" y="{y+54}" font-family="{SANS}" font-size="34" font-weight="600" letter-spacing="-.6" fill="{t["text"]}">{esc(num)}</text>')
+        out.append(f'<text x="{x:.1f}" y="{y+82}" font-family="{SANS}" font-size="14" font-weight="600" fill="{t["accent"]}">{esc(label)}</text>')
+        for j, s in enumerate(subs):
+            out.append(f'<text x="{x:.1f}" y="{y+106+18*j}" font-family="{SANS}" font-size="12.5" fill="{t["muted"]}">{esc(s)}</text>')
+    label = "Impact: " + "; ".join(f"{n} {l}" for n, l, _ in IMPACT)
     return svg(w, h, label, "\n".join(out))
 
 
-# ---------------------------------------------------------------- terminal
+# ------------------------------------------------------------------ project cards
 
-# Each line is (kind, [(css class, text), ...]). Kind "cmd" lines are typed out.
-P = "p"
-TERMINAL = [
-    ("cmd", [(P, "$ "), ("c", "whoami")]),
-    ("out", [("o", "tarique-hayat · java backend & cloud engineer")]),
-    ("cmd", [(P, "$ "), ("c", "jshell")]),
-    ("cmd", [(P, "jshell> "), ("k", "var "), ("x", "me = "), ("k", "new "), ("t", "Engineer"), ("x", "(")]),
-    ("out", [(P, "   ...> "), ("s", '  "Tarique Hayat"'), ("x", ",")]),
-    ("out", [(P, "   ...> "), ("t", "  List"), ("x", "."), ("m", "of"), ("x", "("), ("s", '"Java 21"'), ("x", ", "), ("s", '"Spring Boot 4"'), ("x", ", "), ("s", '"Kafka"'), ("x", "),")]),
-    ("out", [(P, "   ...> "), ("t", "  List"), ("x", "."), ("m", "of"), ("x", "("), ("s", '"Spring AI"'), ("x", ", "), ("s", '"LangChain4j"'), ("x", ", "), ("s", '"RAG"'), ("x", "),")]),
-    ("out", [(P, "   ...> "), ("t", "  List"), ("x", "."), ("m", "of"), ("x", "("), ("s", '"AWS"'), ("x", ", "), ("s", '"Docker"'), ("x", ", "), ("s", '"Jenkins"'), ("x", "));")]),
-    ("out", [("o", "me ==> Engineer[name=Tarique Hayat, ...]")]),
-    ("cmd", [(P, "jshell> "), ("x", "me."), ("m", "openToWork"), ("x", "()")]),
-    ("out", [("o", "$2 ==> "), ("n", "true")]),
+PROJECTS = {
+    "ecommerce": dict(
+        tag="FLAGSHIP", title="E-Commerce Microservices",
+        desc=["Distributed e-commerce backend on Java 21 and Spring",
+              "Boot 4: eight modules, a database per service."],
+        points=["Reusable JWT security starter (auto-configuration)",
+                "Per-service Jenkins pipelines gated on health",
+                "OpenTelemetry tracing and an LLM assistant service"],
+        stack="Spring Boot 4.1 · Spring Cloud · PostgreSQL"),
+    "spring-ai": dict(
+        tag="GENERATIVE AI", title="Spring AI Lab",
+        desc=["Eight Spring AI projects, each building on the last,",
+              "up to a production-shaped RAG pipeline."],
+        points=["RAG with Qdrant and Tavily web search",
+                "Semantic cache in Redis, PII masking before the LLM",
+                "OpenAI, Ollama, Docker Model Runner, Bedrock"],
+        stack="Spring AI 2.0 · Spring Boot 4.1 · Qdrant · Redis"),
+    "saga": dict(
+        tag="EVENT-DRIVEN", title="Saga Choreography",
+        desc=["Distributed transactions with no orchestrator: order",
+              "and payment services coordinate over Kafka."],
+        points=["Choreographed saga over Kafka domain events",
+                "Compensating transactions when payment fails",
+                "Shared event contract in a common-dtos module"],
+        stack="Apache Kafka · Spring Boot"),
+    "gateway": dict(
+        tag="PLATFORM", title="Cloud Gateway",
+        desc=["API gateway with service discovery and client-side",
+              "load balancing across service instances."],
+        points=["Eureka discovery feeding gateway routes",
+                "Spring Cloud LoadBalancer across instances",
+                "Route configuration and filter chains"],
+        stack="Spring Cloud Gateway · Eureka"),
+}
+
+
+def build_card(p, t):
+    w, h = 440, 250
+    assert 80 + len(p["stack"]) * 7.0 <= w - 20, f'stack line too long: {p["title"]}'
+    assert all(len(s) <= 56 for s in p["desc"] + p["points"]), f'line too long: {p["title"]}'
+    out = [f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="10" fill="{t["bg"]}" stroke="{t["border"]}"/>']
+    out.append(f'<text x="24" y="38" font-family="{MONO}" font-size="11" letter-spacing="1.6" fill="{t["accent"]}">{esc(p["tag"])}</text>')
+    out.append(f'<text x="{w-24}" y="40" font-family="{SANS}" font-size="16" text-anchor="end" fill="{t["subtle"]}">↗</text>')
+    out.append(f'<text x="24" y="70" font-family="{SANS}" font-size="20" font-weight="600" fill="{t["link"]}">{esc(p["title"])}</text>')
+    for j, line in enumerate(p["desc"]):
+        out.append(f'<text x="24" y="{98 + 20*j}" font-family="{SANS}" font-size="14" fill="{t["muted"]}">{esc(line)}</text>')
+    for j, pt in enumerate(p["points"]):
+        y = 152 + 21 * j
+        out.append(f'<rect x="24" y="{y-5}" width="8" height="1.6" fill="{t["accent"]}"/>'
+                   f'<text x="40" y="{y}" font-family="{SANS}" font-size="13" fill="{t["text"]}">{esc(pt)}</text>')
+    out.append(f'<line x1="1" y1="{h-44}" x2="{w-1}" y2="{h-44}" stroke="{t["border"]}"/>')
+    out.append(f'<circle cx="30" cy="{h-22}" r="5" fill="{t["java"]}"/>'
+               f'<text x="42" y="{h-17.5}" font-family="{SANS}" font-size="12.5" fill="{t["muted"]}">Java</text>'
+               f'<text x="80" y="{h-17.5}" font-family="{MONO}" font-size="11.5" fill="{t["subtle"]}">{esc(p["stack"])}</text>')
+    label = f'{p["title"]} ({p["tag"].lower()}): ' + " ".join(p["desc"]) + " " + "; ".join(p["points"]) + f'. Stack: Java, {p["stack"]}.'
+    return svg(w, h, label, "\n".join(out))
+
+
+# ------------------------------------------------------------------ shared drawing helpers
+
+# Rough glyph widths (px per character) used to assert that text fits its box.
+W_SANS, W_SANS_B, W_MONO = 0.53, 0.58, 0.61
+
+MOTION_CSS = """
+  .pkt { opacity: 0; }
+  @supports (offset-path: path('M0,0 L1,1')) {
+    .pkt { animation: travel 2.6s cubic-bezier(.45,0,.55,1) infinite both; }
+  }
+  @keyframes travel { 0% { offset-distance: 0%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .pkt { animation: none !important; opacity: 0; } }"""
+
+
+def fits(text, size, avail, kind=W_SANS, what=""):
+    need = len(text) * size * kind
+    assert need <= avail, f"text too wide ({need:.0f}>{avail:.0f}px): {what or text!r}"
+
+
+def box(t, x, y, w, h, title, sub=None, accent=False, dashed=False, size=13):
+    stroke = t["accent"] if accent else t["border"]
+    dash = ' stroke-dasharray="5 4"' if dashed else ""
+    fits(title, size, w - 24, W_SANS_B, title)
+    out = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="6" fill="{t["surface"]}" stroke="{stroke}"{dash}/>']
+    ty = y + (h / 2 + 4.5 if not sub else h / 2 - 2)
+    out.append(f'<text x="{x+12}" y="{ty:.1f}" font-family="{SANS}" font-size="{size}" font-weight="600" '
+               f'fill="{t["accent"] if accent else t["text"]}">{esc(title)}</text>')
+    if sub:
+        fits(sub, 10.5, w - 24, W_MONO, sub)
+        out.append(f'<text x="{x+12}" y="{ty+16:.1f}" font-family="{MONO}" font-size="10.5" fill="{t["muted"]}">{esc(sub)}</text>')
+    return "\n".join(out)
+
+
+def curve(x1, y1, x2, y2):
+    dx = max(18, (x2 - x1) * .45)
+    return f"M{x1:.0f},{y1:.0f} C{x1+dx:.0f},{y1:.0f} {x2-dx:.0f},{y2:.0f} {x2:.0f},{y2:.0f}"
+
+
+def wire(t, d, dashed=False, packet=None):
+    dash = ' stroke-dasharray="5 4"' if dashed else ""
+    out = [f'<path d="{d}" fill="none" stroke="{t["border"]}" stroke-width="1.4"{dash} marker-end="url(#arr)"/>']
+    if packet is not None:
+        out.append(f'<circle class="pkt" r="3" fill="{t["accent"]}" style="offset-path:path(\'{d}\');animation-delay:{packet:.2f}s"/>')
+    return "\n".join(out)
+
+
+def arrow_marker(t):
+    return (f'<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">'
+            f'<path d="M0,1 L9,5 L0,9 z" fill="{t["subtle"]}"/></marker>')
+
+
+def frame_rect(t, w, h):
+    return f'<rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="10" fill="{t["bg"]}" stroke="{t["border"]}"/>'
+
+
+def caption(t, x, y, text, anchor="start", color=None):
+    return (f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="10.5" letter-spacing="1.4" text-anchor="{anchor}" '
+            f'fill="{color or t["subtle"]}">{esc(text)}</text>')
+
+
+# ------------------------------------------------------------------ flagship architecture
+
+ARCH_SERVICES = [  # (name, detail, highlighted)
+    ("auth-service", ":9091 · JWT issuance", False),
+    ("user-service", ":9092 · RBAC", False),
+    ("product-service", ":9093 · catalogue", False),
+    ("ai-service", ":9094 · LangChain4j", True),
 ]
-TERM_COLORS = {"p": "#4ade80", "c": "#f5f3ff", "o": "#a19ccb", "k": "#c084fc", "t": "#67e8f9",
-               "s": "#86efac", "m": "#fde68a", "x": "#e9e6ff", "n": "#fb923c"}
+ARCH_PLATFORM = ["discovery-server · Eureka", "config-server", "OpenTelemetry → Jaeger", "Jenkins · health-gated"]
 
 
-def build_terminal():
-    w, lh, top, fs, cw = 580, 24, 70, 14.5, 8.75
-    h = top + lh * (len(TERMINAL) + 1) + 6
-    out = [frame(w, h, 14, comet=False)]
-    out.append(f'<path d="M1,15 A14,14 0 0 1 15,1 H{w-15} A14,14 0 0 1 {w-1},15 V38 H1 Z" fill="#ffffff" fill-opacity=".05"/>'
-               f'<line x1="1" y1="38" x2="{w-1}" y2="38" stroke="#7c3aed" stroke-opacity=".35"/>'
-               '<circle cx="22" cy="20" r="6" fill="#ff5f57"/><circle cx="42" cy="20" r="6" fill="#febc2e"/><circle cx="62" cy="20" r="6" fill="#28c840"/>'
-               f'<text x="{w/2}" y="24.5" font-family="{MONO}" font-size="12.5" fill="#a19ccb" text-anchor="middle">tarique@hayat: ~</text>')
-    t = 0.3
-    clips = []
-    for i, (kind, toks) in enumerate(TERMINAL):
-        y = top + lh * i
-        spans = "".join(f'<tspan fill="{TERM_COLORS[c]}">{esc(s)}</tspan>' for c, s in toks)
-        length = sum(len(s) for _, s in toks)
-        if kind == "cmd":
-            width = length * cw + 6
-            dur = max(.35, length * .045)
-            # one step per character; the last step opens wide so wider fallback fonts are never cut off
-            steps = [str(int(k * cw)) for k in range(length)] + [f"{width + 40:.0f}"]
-            anim = "" if STATIC else (f'<animate attributeName="width" begin="{t:.2f}s" dur="{dur:.2f}s" fill="freeze" '
-                                      f'calcMode="discrete" values="{";".join(steps)}" '
-                                      f'keyTimes="{";".join(f"{k/length:.4f}" for k in range(length + 1))}"/>')
-            start_w = f"{width + 40:.0f}" if STATIC else "0"
-            clips.append(f'<clipPath id="l{i}"><rect x="20" y="{y-lh+6}" width="{start_w}" height="{lh}">{anim}</rect></clipPath>')
-            out.append(f'<text clip-path="url(#l{i})" x="22" y="{y}" font-family="{MONO}" font-size="{fs}" xml:space="preserve">{spans}</text>')
-            t += dur + .25
-        else:
-            out.append(f'<text class="up" style="animation-delay:{t:.2f}s;animation-duration:.35s" x="22" y="{y}" '
-                       f'font-family="{MONO}" font-size="{fs}" xml:space="preserve">{spans}</text>')
-            t += .18
-    y = top + lh * len(TERMINAL)
-    out.append(f'<g class="up" style="animation-delay:{t:.2f}s;animation-duration:.3s">'
-               f'<text x="22" y="{y}" font-family="{MONO}" font-size="{fs}" fill="{TERM_COLORS["p"]}">jshell&gt; </text>'
-               f'<rect class="blink" x="{22 + 8*cw:.0f}" y="{y-13}" width="9" height="17" fill="#c4b5fd"/></g>')
-    body = "<defs>" + "".join(clips) + "</defs>\n" + "\n".join(out)
-    label = ("Terminal: whoami prints tarique-hayat, java backend and cloud engineer. In jshell, an Engineer "
-             "record lists Java 21, Spring Boot 4 and Kafka; Spring AI, LangChain4j and RAG; AWS, Docker and "
-             "Jenkins. me.openToWork() returns true.")
-    return svg(w, h, label, body)
-
-
-# ---------------------------------------------------------------- contact card
-
-def build_cta():
-    w, h = 900, 250
-    chips = ["Full-time", "Remote", "Hyderabad · Kolkata · Delhi"]
-    out = [frame(w, h, 18)]
-    out.append(f'<text class="up" x="{w/2}" y="70" font-family="{FONT}" font-size="34" font-weight="800" fill="url(#tg)" text-anchor="middle">Let’s build something that stays up</text>')
-    out.append(f'<text class="up" style="animation-delay:.15s" x="{w/2}" y="102" font-family="{FONT}" font-size="16" fill="#b4b0d6" text-anchor="middle">'
-               'Open to Senior Java Backend &amp; Cloud Engineer roles · including GenAI on the JVM</text>')
-    bw, bh, bx, by = 380, 54, (w - 380) / 2, 124
-    out.append(f'<rect class="bring" x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="27" fill="none" stroke="#a78bfa" stroke-width="2"/>')
-    out.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="27" fill="url(#ic)"/>')
-    out.append(f'<g clip-path="url(#btn)"><rect class="bsweep" x="{bx-140}" y="{by}" width="140" height="{bh}" fill="url(#shine)" opacity=".35"/></g>')
-    out.append(f'<text x="{w/2}" y="{by+34}" font-family="{FONT}" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">✉  hayattarique3@gmail.com</text>')
-    # availability chips, centred as a row
-    widths = [len(c) * 6.9 + 40 for c in chips]
-    total = sum(widths) + 12 * (len(chips) - 1)
-    x = (w - total) / 2
-    for i, (c, cw) in enumerate(zip(chips, widths)):
-        out.append(f'<g class="up" style="animation-delay:{.35 + .1*i:.2f}s">'
-                   f'<rect x="{x:.0f}" y="198" width="{cw:.0f}" height="28" rx="14" fill="#22c55e" fill-opacity=".12" stroke="#22c55e" stroke-opacity=".5"/>'
-                   f'<circle class="pulse" style="animation-delay:{.3*i:.1f}s" cx="{x+16:.0f}" cy="212" r="4" fill="#22c55e"/>'
-                   f'<text x="{x+28:.0f}" y="216.5" font-family="{FONT}" font-size="13" font-weight="600" fill="#bbf7d0">{esc(c)}</text></g>')
+def build_architecture(t):
+    w, h = 880, 440
+    out = [f"<defs>{arrow_marker(t)}</defs>", frame_rect(t, w, h)]
+    for x, label in [(28, "CLIENT"), (186, "EDGE"), (384, "SERVICES"), (624, "DATA & AI")]:
+        out.append(caption(t, x, 32, label))
+    # client and gateway
+    out.append(box(t, 24, 166, 124, 48, "Client", "REST + JWT"))
+    out.append(box(t, 182, 166, 156, 48, "gateway", ":9999 · JWT at edge"))
+    # shared starter band above the services
+    out.append(f'<rect x="380" y="46" width="176" height="26" rx="6" fill="none" stroke="{t["accent"]}" stroke-dasharray="4 3"/>'
+               f'<text x="468" y="63" font-family="{MONO}" font-size="10.5" text-anchor="middle" fill="{t["accent"]}">utility · JWT starter</text>')
+    ys = [84, 140, 196, 252]
+    for i, ((name, sub, hl), y) in enumerate(zip(ARCH_SERVICES, ys)):
+        out.append(box(t, 380, y, 176, 44, name, sub, accent=hl))
+        out.append(wire(t, curve(338, 190, 378, y + 22), packet=.9 + .35 * i))
+    out.append(wire(t, curve(148, 190, 180, 190), packet=0.2))
+    # data and AI
+    out.append(box(t, 620, 96, 236, 60, "PostgreSQL 16", "database per service · Flyway"))
+    out.append(box(t, 620, 186, 236, 44, "Kafka + outbox", "planned", dashed=True))
+    out.append(box(t, 620, 252, 236, 44, "OpenAI GPT", "chosen tool → service call", accent=True))
+    for y in ys[:3]:
+        out.append(wire(t, curve(556, y + 22, 618, 126)))
+    out.append(wire(t, curve(556, 218, 618, 208), dashed=True))
+    out.append(wire(t, curve(556, 274, 618, 274), packet=2.3))
+    # platform band
+    out.append(f'<line x1="24" y1="330" x2="{w-24}" y2="330" stroke="{t["border"]}"/>')
+    out.append(caption(t, 28, 356, "PLATFORM"))
+    x = 24
+    for item in ARCH_PLATFORM:
+        cw = len(item) * 12 * W_SANS + 40
+        out.append(f'<rect x="{x:.0f}" y="368" width="{cw:.0f}" height="34" rx="17" fill="{t["surface"]}" stroke="{t["border"]}"/>'
+                   f'<circle cx="{x+16:.0f}" cy="385" r="3.5" fill="{t["green"]}"/>'
+                   f'<text x="{x+26:.0f}" y="389.5" font-family="{SANS}" font-size="12" fill="{t["text"]}">{esc(item)}</text>')
         x += cw + 12
-    extra = f"""
-  .bring {{ transform-box: fill-box; transform-origin: center; animation: bring 2.8s ease-out infinite; }}
-  @keyframes bring {{ from {{ transform: scale(1); opacity: .7; }} to {{ transform: scale(1.1, 1.5); opacity: 0; }} }}
-  .bsweep {{ animation: bsweep 3.2s ease-in-out infinite; }}
-  @keyframes bsweep {{ from {{ transform: translateX(0); }} to {{ transform: translateX({bw+280}px); }} }}"""
-    body = f'<defs><clipPath id="btn"><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="27"/></clipPath></defs>\n' + "\n".join(out)
-    return svg(w, h, "Let's build something that stays up. Email hayattarique3@gmail.com. Open to full-time, remote, "
-                     "and Hyderabad, Kolkata or Delhi roles.", body, extra)
+    assert x <= w - 12, "platform chips overflow"
+    out.append(f'<text x="{w-24}" y="424" font-family="{SANS}" font-size="11.5" text-anchor="end" fill="{t["subtle"]}">'
+               'Dashed = planned. Every service owns its schema; no shared tables.</text>')
+    label = ("Architecture of the e-commerce platform: a client calls the gateway, which validates the JWT and routes to "
+             "auth-service, user-service, product-service and ai-service. Services share a JWT security starter, each owns "
+             "its PostgreSQL schema, ai-service calls OpenAI through LangChain4j, and Kafka with an outbox is planned. "
+             "Platform: Eureka discovery, config server, OpenTelemetry to Jaeger, Jenkins health-gated deploys.")
+    return svg(w, h, label, "\n".join(out), MOTION_CSS)
 
 
-# ---------------------------------------------------------------- main
+# ------------------------------------------------------------------ GenAI request flow
+
+GENAI_FLOW = [  # (title, line 1, line 2, highlighted)
+    ("Question", "“laptops under", "₹50,000”", False),
+    ("gateway", "validates the", "user's JWT", False),
+    ("ai-service", "LangChain4j +", "system prompt", True),
+    ("LLM", "picks a @Tool:", "findProducts()", True),
+    ("product-service", "called with the", "caller's JWT", False),
+    ("Answer", "grounded in", "live data", False),
+]
+
+
+def build_genai_flow(t):
+    w, h = 880, 206
+    n, bw, gap = len(GENAI_FLOW), 130, 10.4
+    out = [f"<defs>{arrow_marker(t)}</defs>", frame_rect(t, w, h)]
+    for i, (title, l1, l2, hl) in enumerate(GENAI_FLOW):
+        x = 24 + i * (bw + gap)
+        stroke = t["accent"] if hl else t["border"]
+        out.append(f'<circle cx="{x+16}" cy="36" r="11" fill="{t["accent"] if hl else t["surface"]}" stroke="{stroke}"/>'
+                   f'<text x="{x+16}" y="40" font-family="{MONO}" font-size="11" text-anchor="middle" '
+                   f'fill="{t["bg"] if hl else t["muted"]}">{i+1}</text>')
+        fits(title, 12.5, bw - 20, W_SANS_B, title)
+        for line in (l1, l2):
+            fits(line, 11, bw - 20, W_SANS, line)
+        out.append(f'<rect x="{x:.1f}" y="58" width="{bw}" height="82" rx="6" fill="{t["surface"]}" stroke="{stroke}"/>'
+                   f'<text x="{x+10:.1f}" y="84" font-family="{SANS}" font-size="12.5" font-weight="600" fill="{t["accent"] if hl else t["text"]}">{esc(title)}</text>'
+                   f'<text x="{x+10:.1f}" y="106" font-family="{SANS}" font-size="11" fill="{t["muted"]}">{esc(l1)}</text>'
+                   f'<text x="{x+10:.1f}" y="122" font-family="{SANS}" font-size="11" fill="{t["muted"]}">{esc(l2)}</text>')
+        if i < n - 1:
+            out.append(wire(t, f"M{x+bw+2:.1f},99 L{x+bw+gap-2:.1f},99", packet=.4 * i))
+    out.append(f'<line x1="24" y1="160" x2="{w-24}" y2="160" stroke="{t["border"]}"/>')
+    out.append(f'<text x="24" y="184" font-family="{SANS}" font-size="12.5" fill="{t["muted"]}">'
+               'Tools call services, never databases: the LLM chooses, the service enforces the permission.</text>')
+    out.append(caption(t, w - 24, 184, "WIRED · TOOLS IN PROGRESS", anchor="end", color=t["accent"]))
+    label = ("GenAI request flow in ai-service: 1 a user asks for laptops under 50,000 rupees; 2 the gateway validates the "
+             "user's JWT; 3 ai-service sends the question with a system prompt through LangChain4j; 4 the LLM picks a tool, "
+             "findProducts; 5 product-service is called with the caller's JWT; 6 the answer is grounded in live data. "
+             "Status: wiring done, tools in progress.")
+    return svg(w, h, label, "\n".join(out), MOTION_CSS)
+
+
+# ------------------------------------------------------------------ delivery pipeline
+
+PIPELINE = [  # (stage, command)
+    ("Parent POM", "mvn -N install"),
+    ("Starter", "mvn install"),
+    ("Test", "mvn test"),
+    ("Package", "mvn package"),
+    ("Stop old", "SIGTERM → 15s"),
+    ("Deploy jar", "java -jar"),
+    ("Health gate", "actuator → UP"),
+]
+
+
+def build_pipeline(t):
+    w, h = 880, 164
+    n, bw, gap = len(PIPELINE), 108, 12.67
+    css = MOTION_CSS + """
+  .run { transform-box: fill-box; transform-origin: left center; animation: run 6s cubic-bezier(.4,0,.2,1) infinite; }
+  @keyframes run { 0% { transform: scaleX(0); opacity: 1; } 80% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .run { animation: none !important; } }"""
+    out = [f"<defs>{arrow_marker(t)}</defs>", frame_rect(t, w, h)]
+    out.append(caption(t, 24, 30, "JENKINS · ONE PIPELINE PER SERVICE"))
+    out.append(f'<text x="{w-24}" y="30" font-family="{SANS}" font-size="12" text-anchor="end" fill="{t["muted"]}">'
+               'fails the build unless the new instance reports UP</text>')
+    for i, (stage, cmd) in enumerate(PIPELINE):
+        x = 24 + i * (bw + gap)
+        last = i == n - 1
+        stroke = t["green"] if last else t["border"]
+        fits(stage, 12.5, bw - 20, W_SANS_B, stage)
+        fits(cmd, 10, bw - 20, W_MONO, cmd)
+        out.append(f'<rect x="{x:.1f}" y="46" width="{bw}" height="74" rx="6" fill="{t["surface"]}" stroke="{stroke}"/>'
+                   f'<circle cx="{x+17:.1f}" cy="64" r="7" fill="none" stroke="{t["green"]}" stroke-width="1.4"/>'
+                   f'<path d="M{x+13.5:.1f},64 l2.5,2.5 l4.5,-5" fill="none" stroke="{t["green"]}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
+                   f'<text x="{x+bw-10:.1f}" y="68" font-family="{MONO}" font-size="10" text-anchor="end" fill="{t["subtle"]}">{i+1:02d}</text>'
+                   f'<text x="{x+10:.1f}" y="91" font-family="{SANS}" font-size="12.5" font-weight="600" fill="{t["text"]}">{esc(stage)}</text>'
+                   f'<text x="{x+10:.1f}" y="108" font-family="{MONO}" font-size="10" fill="{t["muted"]}">{esc(cmd)}</text>')
+        if not last:
+            out.append(f'<path d="M{x+bw+1:.1f},83 L{x+bw+gap-1:.1f},83" stroke="{t["subtle"]}" stroke-width="1.4" marker-end="url(#arr)"/>')
+    out.append(f'<rect x="24" y="136" width="{w-48}" height="4" rx="2" fill="{t["surface"]}" stroke="{t["border"]}" stroke-width=".6"/>'
+               f'<rect class="run" x="24" y="136" width="{w-48}" height="4" rx="2" fill="{t["green"]}"/>')
+    label = ("Delivery pipeline, one Jenkins pipeline per service: install parent POM, install the shared starter, test, package, "
+             "stop the old instance with SIGTERM, deploy the jar, then a health gate on /actuator/health that fails the build "
+             "unless the new instance reports UP.")
+    return svg(w, h, label, "\n".join(out), css)
+
+
+# ------------------------------------------------------------------ principles
+
+ICONS = {
+    "shield": 'M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z M9 12l2 2 4-4',
+    "eye": 'M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z M12 9a3 3 0 1 1 0 6a3 3 0 1 1 0-6z',
+    "cycle": 'M20 11a8 8 0 0 0-14.9-3 M5 3v5h5 M4 13a8 8 0 0 0 14.9 3 M19 21v-5h-5',
+}
+PRINCIPLES = [
+    ("shield", "Design for failure", ["Circuit breakers, bulkheads and", "timeouts go in on day one, not", "after the first incident."]),
+    ("eye", "Observability is part of done", ["If you can't see inside a service,", "it isn't finished. Logs, traces and", "health ship with the feature."]),
+    ("cycle", "Automate the second time", ["CI/CD, provisioning and coverage", "gates. Manual steps are technical", "debt in a process costume."]),
+]
+
+
+def build_principles(t):
+    w, h, cols = 880, 184, 3
+    cw = w / cols
+    out = [frame_rect(t, w, h)]
+    for c in range(1, cols):
+        out.append(f'<line x1="{c*cw:.1f}" y1="1" x2="{c*cw:.1f}" y2="{h-1}" stroke="{t["border"]}"/>')
+    for i, (icon, title, lines) in enumerate(PRINCIPLES):
+        x = i * cw + 26
+        out.append(f'<rect x="{x:.1f}" y="24" width="40" height="40" rx="8" fill="{t["surface"]}" stroke="{t["border"]}"/>'
+                   f'<path transform="translate({x+8:.1f},32)" d="{ICONS[icon]}" fill="none" stroke="{t["accent"]}" '
+                   'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>')
+        fits(title, 14, cw - 52, W_SANS_B, title)
+        out.append(f'<text x="{x:.1f}" y="96" font-family="{SANS}" font-size="14" font-weight="600" fill="{t["text"]}">{esc(title)}</text>')
+        for j, line in enumerate(lines):
+            fits(line, 12.5, cw - 52, W_SANS, line)
+            out.append(f'<text x="{x:.1f}" y="{122 + 18*j}" font-family="{SANS}" font-size="12.5" fill="{t["muted"]}">{esc(line)}</text>')
+    label = "How I work: " + " ".join(f"{title}: {' '.join(lines)}" for _, title, lines in PRINCIPLES)
+    return svg(w, h, label, "\n".join(out))
+
+
+# ------------------------------------------------------------------ contact card
+
+CONTACT = dict(
+    title="Let’s build something that stays up.",
+    line="Open to senior Java backend & cloud roles, including GenAI on the JVM.",
+    status="Available",
+    location="Hyderabad · Kolkata · Delhi · Remote",
+    email="hayattarique3@gmail.com",
+)
+
+
+def build_contact(t):
+    w, h = 880, 164
+    css = """
+  .live { animation: live 2.4s ease-in-out infinite; }
+  @keyframes live { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .live { animation: none; } }"""
+    c = CONTACT
+    bw = len(c["email"]) * 14 * W_SANS_B + 60
+    bx = w - 28 - bw
+    fits(c["title"], 24, bx - 56, W_SANS_B, "contact title")
+    fits(c["line"], 14, bx - 56, W_SANS, "contact line")
+    out = [frame_rect(t, w, h)]
+    out.append(f'<text x="28" y="56" font-family="{SANS}" font-size="24" font-weight="600" letter-spacing="-.3" fill="{t["text"]}">{esc(c["title"])}</text>')
+    out.append(f'<text x="28" y="86" font-family="{SANS}" font-size="14" fill="{t["muted"]}">{esc(c["line"])}</text>')
+    out.append(f'<circle class="live" cx="33" cy="121" r="4" fill="{t["green"]}"/>'
+               f'<text x="45" y="125.5" font-family="{MONO}" font-size="12" fill="{t["text"]}">{esc(c["status"])}'
+               f'<tspan fill="{t["subtle"]}">   /   </tspan><tspan fill="{t["muted"]}">{esc(c["location"])}</tspan></text>')
+    out.append(f'<rect x="{bx:.0f}" y="{h/2-22:.0f}" width="{bw:.0f}" height="44" rx="8" fill="{t["btn"]}"/>'
+               f'<text x="{bx+22:.0f}" y="{h/2+5:.0f}" font-family="{SANS}" font-size="14" font-weight="600" fill="#ffffff">{esc(c["email"])}  →</text>')
+    label = f'{c["title"]} {c["line"]} {c["status"]}: {c["location"]}. Email {c["email"]}.'
+    return svg(w, h, label, "\n".join(out), css)
+
+
+# ------------------------------------------------------------------ main
 
 def main():
-    global STATIC
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--static", metavar="OUTDIR", help="write motion-free previews to OUTDIR instead")
-    args = ap.parse_args()
-    root = ROOT
-    if args.static:
-        STATIC = True
-        root = pathlib.Path(args.static)
-    files = {f"titles/{k}.svg": build_title(*v) for k, v in TITLES.items()}
-    files.update({f"projects/{k}.svg": build_card(v) for k, v in PROJECTS.items()})
-    files["impact.svg"] = build_impact()
-    files["terminal.svg"] = build_terminal()
-    files["cta.svg"] = build_cta()
+    files = {}
+    for mode, t in THEMES.items():
+        files[f"hero-{mode}.svg"] = build_hero(t)
+        files[f"impact-{mode}.svg"] = build_impact(t)
+        for key, p in PROJECTS.items():
+            files[f"projects/{key}-{mode}.svg"] = build_card(p, t)
+        files[f"architecture-{mode}.svg"] = build_architecture(t)
+        files[f"genai-flow-{mode}.svg"] = build_genai_flow(t)
+        files[f"pipeline-{mode}.svg"] = build_pipeline(t)
+        files[f"principles-{mode}.svg"] = build_principles(t)
+        files[f"contact-{mode}.svg"] = build_contact(t)
     for rel, text in files.items():
-        path = root / rel
+        path = ROOT / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")
         print(f"wrote {path}")

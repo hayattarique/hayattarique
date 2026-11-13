@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="250" viewBox="0 0 440 250" role="img" aria-label="Cloud Gateway (platform): API gateway with service discovery and client-side load balancing across service instances. Eureka discovery feeding gateway routes; Spring Cloud LoadBalancer across instances; Route configuration and filter chains. Stack: Java, Spring Cloud Gateway · Eureka.">
+<title>Cloud Gateway (platform): API gateway with service discovery and client-side load balancing across service instances. Eureka discovery feeding gateway routes; Spring Cloud LoadBalancer across instances; Route configuration and filter chains. Stack: Java, Spring Cloud Gateway · Eureka.</title>
+
+<rect x=".5" y=".5" width="439" height="249" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<text x="24" y="38" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#8250df">PLATFORM</text>
+<text x="416" y="40" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="16" text-anchor="end" fill="#8c959f">↗</text>
+<text x="24" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="20" font-weight="600" fill="#0969da">Cloud Gateway</text>
+<text x="24" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">API gateway with service discovery and client-side</text>
+<text x="24" y="118" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" fill="#656d76">load balancing across service instances.</text>
+<rect x="24" y="147" width="8" height="1.6" fill="#8250df"/><text x="40" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" fill="#1f2328">Eureka discovery feeding gateway routes</text>
+<rect x="24" y="168" width="8" height="1.6" fill="#8250df"/><text x="40" y="173" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" fill="#1f2328">Spring Cloud LoadBalancer across instances</text>
+<rect x="24" y="189" width="8" height="1.6" fill="#8250df"/><text x="40" y="194" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="13" fill="#1f2328">Route configuration and filter chains</text>
+<line x1="1" y1="206" x2="439" y2="206" stroke="#d0d7de"/>
+<circle cx="30" cy="228" r="5" fill="#b07219"/><text x="42" y="232.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#656d76">Java</text><text x="80" y="232.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8c959f">Spring Cloud Gateway · Eureka</text>
+</svg>
